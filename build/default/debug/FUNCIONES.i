@@ -27288,6 +27288,6 @@ unsigned char __t3rd16on(void);
 # 34 "./FUNCIONES.h" 2
 
 
-void readADC(void);
+uint16_t leerADC(void);
 # 9 "FUNCIONES.c" 2
 

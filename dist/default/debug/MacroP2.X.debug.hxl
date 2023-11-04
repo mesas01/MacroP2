@@ -1,19 +1,19 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o
- -Odist/default/production\MacroP2.X.production.hex
- -logfile=dist/default/production\MacroP2.X.production.hxl
+ C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o
+ -Odist/default/debug\MacroP2.X.debug.hex
+ -logfile=dist/default/debug\MacroP2.X.debug.hxl
  -addressing=1
  -break=300000
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
-  8h - Bh		(C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
-  18h - 1Dh		(C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
-  1000h - 140Bh		(C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
-  300000h - 300009h		(C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
+  8h - Bh		(C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
+  18h - 1Dh		(C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
+  1000h - 140Bh		(C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
+  300000h - 300009h		(C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   Ch - 17h
@@ -23,7 +23,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

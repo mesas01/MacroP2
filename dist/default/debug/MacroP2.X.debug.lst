@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.45 build 20230818022343 
-                                                                                               Sat Nov 04 13:17:59 2023
+                                                                                               Sat Nov 04 15:54:20 2023
 
 Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1 
      1                           	processor	18F46K42
@@ -2475,15 +2475,15 @@ Pointer List with Targets:
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
-    I2C1_DO_RX_EMPTY$3360$0	PTR void  size(2) Largest target is 5
+    I2C1_DO_RX_EMPTY$3364$0	PTR void  size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
-    I2C1_DO_TX$3348$0	PTR void  size(2) Largest target is 5
+    I2C1_DO_TX$3352$0	PTR void  size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
-    I2C1_DO_TX_EMPTY$3354$0	PTR void  size(2) Largest target is 5
+    I2C1_DO_TX_EMPTY$3358$0	PTR void  size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
@@ -2522,19 +2522,19 @@ Pointer List with Targets:
 
     rdBlkRegCompleteHandler@ptr$data	PTR unsigned char  size(2) Largest target is 0
 
-    S1352$0$0	PTR void  size(2) Largest target is 5
+    S1354$0$0	PTR void  size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
-    S1352$callbackPayload	PTR void [6] size(2) Largest target is 5
+    S1354$callbackPayload	PTR void [6] size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_Write1ByteRegister@data(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), NULL(NULL[0]), 
 
-    S1352$callbackTable	PTR FTN(PTR void ,)enum E363[6] size(2) Largest target is 1
+    S1354$callbackTable	PTR FTN(PTR void ,)enum E363[6] size(2) Largest target is 1
 		 -> I2C1_CallbackReturnReset(), I2C1_CallbackReturnStop(), rd1RegCompleteHandler(), rd2RegCompleteHandler(), 
 		 -> rdBlkRegCompleteHandler(), wr1RegCompleteHandler(), wr2RegCompleteHandler(), NULL(), 
 
-    S1352$data_ptr	PTR unsigned char  size(2) Largest target is 5
+    S1354$data_ptr	PTR unsigned char  size(2) Largest target is 5
 		 -> I2C1_Read1ByteRegister@reg(COMRAM[1]), I2C1_Read1ByteRegister@returnValue(COMRAM[1]), I2C1_Read2ByteRegister@reg(COMRAM[1]), I2C1_Read2ByteRegister@returnValue(COMRAM[2]), 
 		 -> I2C1_ReadDataBlock@bufferBlock(COMRAM[4]), I2C1_ReadDataBlock@reg(COMRAM[1]), I2C1_Write1ByteRegister@data(COMRAM[1]), I2C1_Write1ByteRegister@reg(COMRAM[1]), 
 		 -> I2C1_Write2ByteRegister@data(COMRAM[2]), I2C1_Write2ByteRegister@reg(COMRAM[1]), NULL(NULL[0]), 
@@ -2922,7 +2922,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.45 build 20230818022343 
-Symbol Table                                                                                   Sat Nov 04 13:17:59 2023
+Symbol Table                                                                                   Sat Nov 04 15:54:20 2023
 
                       __end_of_FVR_Initialize 1406                                           l153 12DC  
                                          l156 13D4                                           l324 11BC  

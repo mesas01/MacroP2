@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/interrupt_manager.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,13 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/mcc.c" 2
-# 47 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/interrupt_manager.c" 2
+# 49 "mcc_generated_files/interrupt_manager.c"
+# 1 "mcc_generated_files/interrupt_manager.h" 1
+# 87 "mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 49 "mcc_generated_files/interrupt_manager.c" 2
+
 # 1 "mcc_generated_files/mcc.h" 1
 # 49 "mcc_generated_files/mcc.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 1 3
@@ -27284,9 +27289,9 @@ unsigned char __t3rd16on(void);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 258 "mcc_generated_files/pin_manager.h"
+# 298 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 270 "mcc_generated_files/pin_manager.h"
+# 310 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -27456,10 +27461,6 @@ char *tempnam(const char *, const char *);
 # 8 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\conio.h" 2 3
 # 54 "mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 87 "mcc_generated_files/interrupt_manager.h"
-void INTERRUPT_Initialize (void);
-# 55 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/i2c1_master.h" 1
 # 58 "mcc_generated_files/i2c1_master.h"
@@ -28039,6 +28040,8 @@ typedef enum
 {
     channel_ANA0 = 0x0,
     channel_ANA1 = 0x1,
+    channel_ANA4 = 0x4,
+    channel_ANA5 = 0x5,
     ADC_Amplif = 0x6,
     channel_ANA7 = 0x7,
     channel_VSS = 0x3B,
@@ -28047,59 +28050,59 @@ typedef enum
     channel_FVR_Buffer1 = 0x3E,
     channel_FVR_Buffer2 = 0x3F
 } adcc_channel_t;
-# 134 "mcc_generated_files/adcc.h"
+# 136 "mcc_generated_files/adcc.h"
 void ADCC_Initialize(void);
-# 163 "mcc_generated_files/adcc.h"
+# 165 "mcc_generated_files/adcc.h"
 void ADCC_StartConversion(adcc_channel_t channel);
-# 193 "mcc_generated_files/adcc.h"
+# 195 "mcc_generated_files/adcc.h"
 _Bool ADCC_IsConversionDone(void);
-# 225 "mcc_generated_files/adcc.h"
+# 227 "mcc_generated_files/adcc.h"
 adc_result_t ADCC_GetConversionResult(void);
-# 256 "mcc_generated_files/adcc.h"
+# 258 "mcc_generated_files/adcc.h"
 adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-# 281 "mcc_generated_files/adcc.h"
+# 283 "mcc_generated_files/adcc.h"
 void ADCC_StopConversion(void);
-# 308 "mcc_generated_files/adcc.h"
+# 310 "mcc_generated_files/adcc.h"
 void ADCC_SetStopOnInterrupt(void);
-# 333 "mcc_generated_files/adcc.h"
+# 335 "mcc_generated_files/adcc.h"
 void ADCC_DischargeSampleCapacitor(void);
-# 359 "mcc_generated_files/adcc.h"
+# 361 "mcc_generated_files/adcc.h"
 void ADCC_LoadAcquisitionRegister(uint16_t);
-# 385 "mcc_generated_files/adcc.h"
+# 387 "mcc_generated_files/adcc.h"
 void ADCC_SetPrechargeTime(uint16_t);
-# 410 "mcc_generated_files/adcc.h"
+# 412 "mcc_generated_files/adcc.h"
 void ADCC_SetRepeatCount(uint8_t);
-# 438 "mcc_generated_files/adcc.h"
+# 440 "mcc_generated_files/adcc.h"
 uint8_t ADCC_GetCurrentCountofConversions(void);
-# 462 "mcc_generated_files/adcc.h"
+# 464 "mcc_generated_files/adcc.h"
 void ADCC_ClearAccumulator(void);
-# 487 "mcc_generated_files/adcc.h"
+# 489 "mcc_generated_files/adcc.h"
 uint24_t ADCC_GetAccumulatorValue(void);
-# 515 "mcc_generated_files/adcc.h"
+# 517 "mcc_generated_files/adcc.h"
 _Bool ADCC_HasAccumulatorOverflowed(void);
-# 540 "mcc_generated_files/adcc.h"
+# 542 "mcc_generated_files/adcc.h"
 uint16_t ADCC_GetFilterValue(void);
-# 568 "mcc_generated_files/adcc.h"
+# 570 "mcc_generated_files/adcc.h"
 uint16_t ADCC_GetPreviousResult(void);
-# 594 "mcc_generated_files/adcc.h"
+# 596 "mcc_generated_files/adcc.h"
 void ADCC_DefineSetPoint(uint16_t);
-# 620 "mcc_generated_files/adcc.h"
+# 622 "mcc_generated_files/adcc.h"
 void ADCC_SetUpperThreshold(uint16_t);
-# 646 "mcc_generated_files/adcc.h"
+# 648 "mcc_generated_files/adcc.h"
 void ADCC_SetLowerThreshold(uint16_t);
-# 673 "mcc_generated_files/adcc.h"
+# 675 "mcc_generated_files/adcc.h"
 uint16_t ADCC_GetErrorCalculation(void);
-# 700 "mcc_generated_files/adcc.h"
+# 702 "mcc_generated_files/adcc.h"
 void ADCC_EnableDoubleSampling(void);
-# 724 "mcc_generated_files/adcc.h"
+# 726 "mcc_generated_files/adcc.h"
 void ADCC_EnableContinuousConversion(void);
-# 748 "mcc_generated_files/adcc.h"
+# 750 "mcc_generated_files/adcc.h"
 void ADCC_DisableContinuousConversion(void);
-# 776 "mcc_generated_files/adcc.h"
+# 778 "mcc_generated_files/adcc.h"
 _Bool ADCC_HasErrorCrossedUpperThreshold(void);
-# 804 "mcc_generated_files/adcc.h"
+# 806 "mcc_generated_files/adcc.h"
 _Bool ADCC_HasErrorCrossedLowerThreshold(void);
-# 831 "mcc_generated_files/adcc.h"
+# 833 "mcc_generated_files/adcc.h"
 uint8_t ADCC_GetConversionStageStatus(void);
 # 61 "mcc_generated_files/mcc.h" 2
 
@@ -28141,55 +28144,39 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 103 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 47 "mcc_generated_files/mcc.c" 2
+# 50 "mcc_generated_files/interrupt_manager.c" 2
 
 
+uint16_t ADC_0_Grados = 0;
+uint16_t ADC_90_Grados = 0;
+int bandera = 0;
 
-void SYSTEM_Initialize(void)
+void INTERRUPT_Initialize (void)
 {
-    INTERRUPT_Initialize();
-    PMD_Initialize();
-    I2C1_Initialize();
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    FVR_Initialize();
-    TMR6_Initialize();
-    ADCC_Initialize();
-    TMR2_Initialize();
-    PWM5_Initialize();
-    UART1_Initialize();
+
+    INTCON0bits.IPEN = 0;
 }
 
-void OSCILLATOR_Initialize(void)
+void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 {
 
-    OSCCON1 = 0x60;
+    if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
+    {
+        TMR6_ISR();
 
-    OSCCON3 = 0x00;
+        if(bandera == 0){
+            ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 1;
+            do { LATBbits.LATB3 = 1; } while(0);
+        }else{
+            ADC_90_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 0;
+            do { LATBbits.LATB3 = 0; } while(0);
+        }
 
-    OSCEN = 0x00;
+    }
+    else
+    {
 
-    OSCFRQ = 0x08;
-
-    OSCTUNE = 0x00;
-}
-
-void PMD_Initialize(void)
-{
-
-    PMD0 = 0x00;
-
-    PMD1 = 0x00;
-
-    PMD2 = 0x00;
-
-    PMD3 = 0x00;
-
-    PMD4 = 0x00;
-
-    PMD5 = 0x00;
-
-    PMD6 = 0x00;
-
-    PMD7 = 0x00;
+    }
 }

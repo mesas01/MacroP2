@@ -517,8 +517,8 @@ smallconst 1000 1027 SMALLCONST 1000 0
 bssCOMRAM 1 3E COMRAM 1 1
 text11 1028 140B CODE 1028 0
 %locals
-dist/default/production\MacroP2.X.production.o
-C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+dist/default/debug\MacroP2.X.debug.o
+C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
 18768 1350 0 CODE 0
 18770 1350 0 CODE 0
 18773 1350 0 CODE 0
