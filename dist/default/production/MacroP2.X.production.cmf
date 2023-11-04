@@ -13,34 +13,35 @@
 %PSECTS
 $dist/default/production\MacroP2.X.production.o
 ivt0x8 CODE 0 8 8 12 1 2
-cinit CODE 0 12FE 12FE 1E 1 2
-text0 CODE 0 133A 133A 1A 1 2
-text1 CODE 0 125E 125E 2E 1 2
-text2 CODE 0 10D4 10D4 68 1 2
-text3 CODE 0 1384 1384 A 1 2
-text4 CODE 0 138E 138E A 1 2
-text5 CODE 0 1398 1398 A 1 2
-text6 CODE 0 128C 128C 2C 1 2
-text7 CODE 0 13A2 13A2 A 1 2
-text8 CODE 0 131C 131C 1E 1 2
-text9 CODE 0 1354 1354 18 1 2
-nvCOMRAM COMRAM 1 26 26 8 1 1
-text10 CODE 0 12B8 12B8 24 1 2
+cinit CODE 0 1350 1350 1E 1 2
+text0 CODE 0 138C 138C 1A 1 2
+text1 CODE 0 12B0 12B0 2E 1 2
+text2 CODE 0 1156 1156 68 1 2
+text3 CODE 0 13D6 13D6 A 1 2
+text4 CODE 0 13E0 13E0 A 1 2
+text5 CODE 0 13EA 13EA A 1 2
+text6 CODE 0 12DE 12DE 2C 1 2
+text7 CODE 0 13F4 13F4 A 1 2
+text8 CODE 0 136E 136E 1E 1 2
+text9 CODE 0 13A6 13A6 18 1 2
+nvCOMRAM COMRAM 1 37 37 8 1 1
+text10 CODE 0 130A 130A 24 1 2
 text11 CODE 0 1028 1028 AC 1 2
-text12 CODE 0 136C 136C 18 1 2
-text13 CODE 0 13B4 13B4 4 1 2
-text14 CODE 0 12DC 12DC 22 1 2
-text15 CODE 0 13AC 13AC 8 1 2
-text16 CODE 0 119E 119E 5C 1 2
-text17 CODE 0 11FA 11FA 34 1 2
-text18 CODE 0 113C 113C 62 1 2
-text19 CODE 0 122E 122E 30 1 2
-text20 CODE 0 13B8 13B8 2 1 2
-cstackCOMRAM COMRAM 1 2E 2E 7 1 1
+text12 CODE 0 13BE 13BE 18 1 2
+text13 CODE 0 1406 1406 4 1 2
+text14 CODE 0 132E 132E 22 1 2
+text15 CODE 0 13FE 13FE 8 1 2
+text16 CODE 0 11BE 11BE 5C 1 2
+text17 CODE 0 121A 121A 34 1 2
+text18 CODE 0 10D4 10D4 82 1 2
+text19 CODE 0 1280 1280 30 1 2
+text20 CODE 0 140A 140A 2 1 2
+text21 CODE 0 124E 124E 32 1 2
+cstackCOMRAM COMRAM 1 2C 2C B 1 1
 smallconst SMALLCONST 0 1000 1000 28 1 2
-bssCOMRAM COMRAM 1 1 1 25 1 1
+bssCOMRAM COMRAM 1 1 1 2B 1 1
 config CONFIG 4 300000 300000 A 1 1
-$C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+$C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 init CODE 0 1A 1A 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 A 1 1
@@ -64,23 +65,23 @@ BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST 1E-FFF 1
-CONST 13BA-FFFF 1
+CONST 140C-FFFF 1
 IDLOC 200000-20000F 1
-SMALLCONST 13BA-FFFF 1
+SMALLCONST 140C-FFFF 1
 CODE 4-7 1
 CODE 1E-FFF 1
-CODE 13BA-FFFF 1
+CODE 140C-FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-EFF 1
 BANK15 F00-FFF 1
-BIGRAM 35-FFF 1
+BIGRAM 3F-FFF 1
 BIGSFR 3800-3FFF 1
-COMRAM 35-5F 1
+COMRAM 3F-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 13BA-FFFF 1
+MEDIUMCONST 140C-FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -95,69 +96,84 @@ MEDIUMCONST 13BA-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MacroP2.X.production.o
-13B8 text20 CODE >182:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13B8 text20 CODE >185:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-122E text19 CODE >165:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-122E text19 CODE >169:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1232 text19 CODE >171:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1244 text19 CODE >173:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-125C text19 CODE >175:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-113C text18 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1148 text18 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1166 text18 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-116A text18 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1190 text18 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-11FA text17 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-11FA text17 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-1212 text17 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-122C text17 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-119E text16 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-119E text16 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11A4 text16 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11A8 text16 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11AC text16 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11B0 text16 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11B4 text16 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11B8 text16 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11BC text16 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11C0 text16 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11C4 text16 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11C8 text16 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11CC text16 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D0 text16 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D4 text16 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D8 text16 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11DC text16 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E0 text16 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E4 text16 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E8 text16 CODE >102:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11EC text16 CODE >104:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F0 text16 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F4 text16 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F8 text16 CODE >111:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-13AC text15 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-13AC text15 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-13B2 text15 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-12DC text14 CODE >183:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12DC text14 CODE >186:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12E2 text14 CODE >188:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12E6 text14 CODE >190:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12EA text14 CODE >192:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12EE text14 CODE >194:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12F2 text14 CODE >196:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12F6 text14 CODE >198:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12FA text14 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-12FC text14 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-13B4 text13 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-13B4 text13 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-13B6 text13 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-136C text12 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-136C text12 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1372 text12 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1376 text12 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-137A text12 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-137E text12 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1382 text12 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+124E text21 CODE >137:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1250 text21 CODE >140:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1256 text21 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+125A text21 CODE >146:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+125C text21 CODE >149:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+125E text21 CODE >153:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+125E text21 CODE >155:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+126C text21 CODE >159:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+127E text21 CODE >160:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+140A text20 CODE >182:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+140A text20 CODE >185:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1280 text19 CODE >165:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1280 text19 CODE >169:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1284 text19 CODE >171:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1296 text19 CODE >173:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12AE text19 CODE >175:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+10D4 text18 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+10E0 text18 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+10FE text18 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1102 text18 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1114 text18 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1122 text18 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+112A text18 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1130 text18 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+113E text18 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1146 text18 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1148 text18 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+121A text17 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+121A text17 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+1232 text17 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+124C text17 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+11BE text16 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11BE text16 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11C4 text16 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11C8 text16 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11CC text16 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11D0 text16 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11D4 text16 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11D8 text16 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11DC text16 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11E0 text16 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11E4 text16 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11E8 text16 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11EC text16 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11F0 text16 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11F4 text16 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11F8 text16 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+11FC text16 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1200 text16 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1204 text16 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1208 text16 CODE >102:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+120C text16 CODE >104:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1210 text16 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1214 text16 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+1218 text16 CODE >111:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+13FE text15 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+13FE text15 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+1404 text15 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+132E text14 CODE >183:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+132E text14 CODE >186:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1334 text14 CODE >188:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1338 text14 CODE >190:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+133C text14 CODE >192:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1340 text14 CODE >194:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1344 text14 CODE >196:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1348 text14 CODE >198:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+134C text14 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+134E text14 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+1406 text13 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1406 text13 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1408 text13 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+13BE text12 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13BE text12 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13C4 text12 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13C8 text12 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13CC text12 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13D0 text12 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13D4 text12 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
 1028 text11 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
 1028 text11 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
 102C text11 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
@@ -208,111 +224,111 @@ $dist/default/production\MacroP2.X.production.o
 10CA text11 CODE >142:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
 10CE text11 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
 10D2 text11 CODE >144:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-12B8 text10 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12B8 text10 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12BE text10 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12C2 text10 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12C6 text10 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12CA text10 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12CE text10 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12D2 text10 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12D6 text10 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12DA text10 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1354 text9 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-1354 text9 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-1358 text9 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-135C text9 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-1360 text9 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-136A text9 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-131C text8 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-131C text8 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1320 text8 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1324 text8 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1328 text8 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-132C text8 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1330 text8 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1334 text8 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1338 text8 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-13A2 text7 CODE >178:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13A2 text7 CODE >179:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13AA text7 CODE >180:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-128C text6 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-128C text6 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1290 text6 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1294 text6 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1298 text6 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-129C text6 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12A0 text6 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12A4 text6 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12A6 text6 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12B2 text6 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12B6 text6 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1398 text5 CODE >208:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1398 text5 CODE >209:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13A0 text5 CODE >210:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-138E text4 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-138E text4 CODE >201:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1396 text4 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1384 text3 CODE >204:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1384 text3 CODE >205:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-138C text3 CODE >206:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10D4 text2 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10D4 text2 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10DA text2 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10DE text2 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10E2 text2 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10E6 text2 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10EA text2 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10EE text2 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10F2 text2 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10F6 text2 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10FA text2 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-10FE text2 CODE >103:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1102 text2 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1106 text2 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-110A text2 CODE >112:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-110E text2 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1112 text2 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-111E text2 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-112A text2 CODE >120:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1136 text2 CODE >122:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-113A text2 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-125E text1 CODE >50:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-125E text1 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1262 text1 CODE >53:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1266 text1 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-126A text1 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-126E text1 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1272 text1 CODE >57:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1276 text1 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-127A text1 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-127E text1 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1282 text1 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1286 text1 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-128A text1 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-133A text0 CODE >49:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-133A text0 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-133E text0 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1340 text0 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1340 text0 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-12FE cinit CODE >17258:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-12FE cinit CODE >17260:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-12FE cinit CODE >17263:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-12FE cinit CODE >17277:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1302 cinit CODE >17278:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1304 cinit CODE >17279:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1304 cinit CODE >17280:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1306 cinit CODE >17281:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1308 cinit CODE >17282:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-130A cinit CODE >17290:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-130C cinit CODE >17291:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-130E cinit CODE >17292:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1310 cinit CODE >17293:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1312 cinit CODE >17294:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1314 cinit CODE >17295:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1316 cinit CODE >17301:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1316 cinit CODE >17303:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
-1318 cinit CODE >17304:C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_1.s
+130A text10 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+130A text10 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1310 text10 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1314 text10 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1318 text10 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+131C text10 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1320 text10 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1324 text10 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+1328 text10 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+132C text10 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+13A6 text9 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+13A6 text9 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+13AA text9 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+13AE text9 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+13B2 text9 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+13BC text9 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+136E text8 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+136E text8 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+1372 text8 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+1376 text8 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+137A text8 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+137E text8 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+1382 text8 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+1386 text8 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+138A text8 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+13F4 text7 CODE >178:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+13F4 text7 CODE >179:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+13FC text7 CODE >180:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12DE text6 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12DE text6 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12E2 text6 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12E6 text6 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12EA text6 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12EE text6 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12F2 text6 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12F6 text6 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+12F8 text6 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1304 text6 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+1308 text6 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+13EA text5 CODE >208:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13EA text5 CODE >209:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13F2 text5 CODE >210:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13E0 text4 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13E0 text4 CODE >201:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13E8 text4 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13D6 text3 CODE >204:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13D6 text3 CODE >205:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+13DE text3 CODE >206:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1156 text2 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1156 text2 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+115C text2 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1160 text2 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1164 text2 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1168 text2 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+116C text2 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1170 text2 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1174 text2 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1178 text2 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+117C text2 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1180 text2 CODE >103:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1184 text2 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1188 text2 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+118C text2 CODE >112:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1190 text2 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+1194 text2 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+11A0 text2 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+11AC text2 CODE >120:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+11B8 text2 CODE >122:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+11BC text2 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+12B0 text1 CODE >50:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12B0 text1 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12B4 text1 CODE >53:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12B8 text1 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12BC text1 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12C0 text1 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12C4 text1 CODE >57:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12C8 text1 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12CC text1 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12D0 text1 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12D4 text1 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12D8 text1 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+12DC text1 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+138C text0 CODE >49:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+138C text0 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+1390 text0 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+1392 text0 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+1392 text0 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+1350 cinit CODE >18768:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1350 cinit CODE >18770:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1350 cinit CODE >18773:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1350 cinit CODE >18796:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1354 cinit CODE >18797:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1356 cinit CODE >18798:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1356 cinit CODE >18799:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1358 cinit CODE >18800:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+135A cinit CODE >18801:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+135C cinit CODE >18809:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+135E cinit CODE >18810:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1360 cinit CODE >18811:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1362 cinit CODE >18812:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1364 cinit CODE >18813:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1366 cinit CODE >18814:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1368 cinit CODE >18820:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+1368 cinit CODE >18822:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
+136A cinit CODE >18823:C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -326,23 +342,23 @@ $dist/default/production\MacroP2.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MacroP2.X.production.o
-_I2C1_Initialize 12DC 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
-__Hspace_0 13BA 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__Hspace_1 35 0 ABS 0 - dist/default/production\MacroP2.X.production.o
+_I2C1_Initialize 132E 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
+__Hspace_0 140C 0 ABS 0 - dist/default/production\MacroP2.X.production.o
+__Hspace_1 3F 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PWM5CON 3F6E 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PWM5DCH 3F6D 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PWM5DCL 3F6C 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MacroP2.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MacroP2.X.production.o
-__end_of_UART1_SetFramingErrorHandler 1398 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
-__end_of_UART1_SetOverrunErrorHandler 138E 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
-__end_of_INTERRUPT_Initialize 13B8 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
-_PMD_Initialize 12B8 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
+__end_of_UART1_SetFramingErrorHandler 13EA 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
+__end_of_UART1_SetOverrunErrorHandler 13E0 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
+__end_of_INTERRUPT_Initialize 140A 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
+_PMD_Initialize 130A 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\MacroP2.X.production.o
-UART1_SetOverrunErrorHandler@interruptHandler 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+UART1_SetOverrunErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\MacroP2.X.production.o
 _LATA 3FBA 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _LATB 3FBB 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -366,30 +382,32 @@ _WPUB 3A51 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _WPUC 3A61 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _WPUD 3A71 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _WPUE 3A81 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-_main 133A 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-start 1A 0 CODE 0 init C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+___sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+_main 138C 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+start 1A 0 CODE 0 init C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MacroP2.X.production.o
+_ADC_90_Grados 27 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
+?_ADCC_GetSingleConversion 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\MacroP2.X.production.o
 _I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_UART1_ErrorHandler 28 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
-_TMR2_Initialize 131C 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
+_UART1_ErrorHandler 39 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
+_TMR2_Initialize 136E 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
 _I2C1_DO_RX_EMPTY 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\MacroP2.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+__accesstop 60 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 _T6HLTbits 3F95 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MacroP2.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MacroP2.X.production.o
 _wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\MacroP2.X.production.o
-__end_of_PMD_Initialize 12DC 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
+__end_of_PMD_Initialize 132E 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\MacroP2.X.production.o
 _U1ERRIE 3DFA 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _U1ERRIR 3DF9 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -421,17 +439,18 @@ _ANSELB 3A50 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ANSELC 3A60 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ANSELD 3A70 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ANSELE 3A80 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_FVR_Initialize 13AC 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+_FVR_Initialize 13FE 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 _I2C1CON0 3D73 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1CON1 3D74 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1CON2 3D75 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 _T6RSTbits 3F97 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _FVRCONbits 3EC1 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__end_of_INTERRUPT_InterruptManager 119E 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
+__end_of_INTERRUPT_InterruptManager 1156 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
+ADCC_GetSingleConversion@channel 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MacroP2.X.production.o
-_TMR6_DefaultInterruptHandler 13B8 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
+_TMR6_DefaultInterruptHandler 140A 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
 _I2C1_DO_BUS_COLLISION 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MacroP2.X.production.o
@@ -444,11 +463,11 @@ _INLVLD 3A74 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _INLVLE 3A84 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\MacroP2.X.production.o
 _INTCON0bits 3FD2 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-UART1_SetFramingErrorHandler@interruptHandler 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+UART1_SetFramingErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 _I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PIN_MANAGER_Initialize 1028 0 CODE 0 text11 dist/default/production\MacroP2.X.production.o
-__end_of_FVR_Initialize 13B4 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
-start_initialization 12FE 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+__end_of_FVR_Initialize 1406 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
+start_initialization 1350 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
 _ODCONA 3A42 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ODCONB 3A52 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ODCONC 3A62 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -456,11 +475,11 @@ _ODCOND 3A72 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ODCONE 3A82 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _OSCFRQ 39DF 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MacroP2.X.production.o
-_UART1_Initialize 10D4 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
+_UART1_Initialize 1156 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
 _I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ADFLTRH 3EE7 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ADFLTRL 3EE6 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__end_of_PWM5_LoadDutyValue 122E 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
+__end_of_PWM5_LoadDutyValue 124E 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
 _ADPREVH 3EEE 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ADPREVL 3EED 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -476,7 +495,7 @@ _RC4I2C 3A6B 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _RC6PPS 3A16 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _RD0I2C 3A7A 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _RD1I2C 3A7B 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__end_of_SYSTEM_Initialize 128C 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
+__end_of_SYSTEM_Initialize 12DE 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
 _U1CON0bits 3DF2 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _T2CLKCON 3FAE 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _U1BRGH 3DF6 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -485,9 +504,10 @@ _U1CON0 3DF2 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _U1CON1 3DF3 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _U1CON2 3DF4 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _U1FIFO 3DF7 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+__end_of_ADCC_GetSingleConversion 1280 0 CODE 0 text21 dist/default/production\MacroP2.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 _I2C1_Status 1 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
-__end_of_ADCC_Initialize 11FA 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
+__end_of_ADCC_Initialize 121A 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
 _rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\MacroP2.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\MacroP2.X.production.o
@@ -526,8 +546,8 @@ __Hbank15 0 0 ABS 0 bank15 dist/default/production\MacroP2.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MacroP2.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\MacroP2.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\MacroP2.X.production.o
-__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-_PWM5_LoadDutyValue 11FA 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
+__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+_PWM5_LoadDutyValue 121A 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\MacroP2.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\MacroP2.X.production.o
 _T2HLTbits 3FAD 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -561,7 +581,7 @@ __Ltext8 0 0 ABS 0 text8 dist/default/production\MacroP2.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\MacroP2.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\MacroP2.X.production.o
 _wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_INTERRUPT_Initialize 13B4 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
+_INTERRUPT_Initialize 1406 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\MacroP2.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\MacroP2.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\MacroP2.X.production.o
@@ -579,36 +599,38 @@ __Lrbss 0 0 COMRAM 1 rbss dist/default/production\MacroP2.X.production.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\MacroP2.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\MacroP2.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MacroP2.X.production.o
-PWM5_LoadDutyValue@dutyValue 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+PWM5_LoadDutyValue@dutyValue 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\MacroP2.X.production.o
 _I2C1_DO_BUS_ERROR 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PR2 3FAB 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PR6 3F93 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__S0 13BA 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__S1 35 0 ABS 0 - dist/default/production\MacroP2.X.production.o
+__S0 140C 0 ABS 0 - dist/default/production\MacroP2.X.production.o
+__S1 3F 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/production\MacroP2.X.production.o
 IVTBASEH 3FD6 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 IVTBASEL 3FD5 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 IVTBASEU 3FD7 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_uart1RxLastError 25 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
-__end_of_UART1_Initialize 113C 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
-__pnvCOMRAM 26 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
+_uart1RxLastError 2B 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
+__end_of_UART1_Initialize 11BE 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
+__pnvCOMRAM 37 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
 _T2RSTbits 3FAF 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_ADCC_Initialize 119E 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
+_ADCC_Initialize 11BE 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
 __pivt0x8 8 0 CODE 0 ivt0x8 dist/default/production\MacroP2.X.production.o
 _I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1STAT1bits 3D78 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MacroP2.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\MacroP2.X.production.o
 _I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_SYSTEM_Initialize 125E 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
-__end_of_TMR6_DefaultInterruptHandler 13BA 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
+_SYSTEM_Initialize 12B0 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
+_bandera 25 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
+__end_of_TMR6_DefaultInterruptHandler 140C 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
 _I2C1CON0bits 3D73 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1CON1bits 3D74 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1ERRbits 3D76 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_TMR6_SetInterruptHandler 13A2 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
+_ADC_0_Grados 29 0 COMRAM 1 bssCOMRAM dist/default/production\MacroP2.X.production.o
+_TMR6_SetInterruptHandler 13F4 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
 __Hramtop 1000 0 RAM 0 ramtop dist/default/production\MacroP2.X.production.o
 _T6CLKCON 3F96 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\MacroP2.X.production.o
@@ -634,23 +656,25 @@ __Htext18 0 0 ABS 0 text18 dist/default/production\MacroP2.X.production.o
 __Htext19 0 0 ABS 0 text19 dist/default/production\MacroP2.X.production.o
 __Htext20 0 0 ABS 0 text20 dist/default/production\MacroP2.X.production.o
 __Htext21 0 0 ABS 0 text21 dist/default/production\MacroP2.X.production.o
-_INTERRUPT_InterruptManager 113C 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\MacroP2.X.production.o
+_INTERRUPT_InterruptManager 10D4 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
 _PIE2bits 3992 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PIE3bits 3993 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PIE9bits 3999 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__ptext10 12B8 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
+__ptext10 130A 0 CODE 0 text10 dist/default/production\MacroP2.X.production.o
 __ptext11 1028 0 CODE 0 text11 dist/default/production\MacroP2.X.production.o
-__ptext12 136C 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
-__ptext13 13B4 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
-__ptext14 12DC 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
-__ptext15 13AC 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
-__ptext16 119E 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
-__ptext17 11FA 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
-__ptext18 113C 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
-__ptext19 122E 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
-__ptext20 13B8 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
-__ptext21 0 0 CODE 0 text21 dist/default/production\MacroP2.X.production.o
-_TMR6_ISR 122E 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
+__ptext12 13BE 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
+__ptext13 1406 0 CODE 0 text13 dist/default/production\MacroP2.X.production.o
+__ptext14 132E 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
+__ptext15 13FE 0 CODE 0 text15 dist/default/production\MacroP2.X.production.o
+__ptext16 11BE 0 CODE 0 text16 dist/default/production\MacroP2.X.production.o
+__ptext17 121A 0 CODE 0 text17 dist/default/production\MacroP2.X.production.o
+__ptext18 10D4 0 CODE 0 text18 dist/default/production\MacroP2.X.production.o
+__ptext19 1280 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
+__ptext20 140A 0 CODE 0 text20 dist/default/production\MacroP2.X.production.o
+__ptext21 124E 0 CODE 0 text21 dist/default/production\MacroP2.X.production.o
+__ptext22 0 0 CODE 0 text22 dist/default/production\MacroP2.X.production.o
+_TMR6_ISR 1280 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
 _I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __end_of_PIN_MANAGER_Initialize 10D4 0 CODE 0 text11 dist/default/production\MacroP2.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\MacroP2.X.production.o
@@ -663,23 +687,23 @@ __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MacroP2.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\MacroP2.X.production.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\MacroP2.X.production.o
 _I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-UART1_SetErrorHandler@interruptHandler 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+UART1_SetErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 _I2C1_DO_TX_ACK 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\MacroP2.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\MacroP2.X.production.o
-__end_of_TMR6_ISR 125E 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
+__end_of_TMR6_ISR 12B0 0 CODE 0 text19 dist/default/production\MacroP2.X.production.o
 _LATBbits 3FBB 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-_TMR6_InterruptHandler 26 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
+_TMR6_InterruptHandler 37 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
 _I2C1SCLPPS 3AE1 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _T6CONbits 3F94 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1SDAPPS 3AE2 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\MacroP2.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\MacroP2.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-stackhi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 _OSCCON1 39D9 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _OSCCON3 39DB 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _OSCTUNE 39DE 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -702,29 +726,29 @@ _PIR3bits 39A3 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PIR4bits 39A4 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _PIR9bits 39A9 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MacroP2.X.production.o
-_UART1_SetFramingErrorHandler 138E 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
-_UART1_SetOverrunErrorHandler 1384 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
-end_of_initialization 1316 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+_UART1_SetFramingErrorHandler 13E0 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
+_UART1_SetOverrunErrorHandler 13D6 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
+end_of_initialization 1368 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\MacroP2.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\MacroP2.X.production.o
-_UART1_FramingErrorHandler 2C 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
-_UART1_OverrunErrorHandler 2A 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
-__end_of_TMR6_Initialize 12B8 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
+_UART1_FramingErrorHandler 3D 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
+_UART1_OverrunErrorHandler 3B 0 COMRAM 1 nvCOMRAM dist/default/production\MacroP2.X.production.o
+__end_of_TMR6_Initialize 130A 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
 _I2C1_DO_RX 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1_DO_TX 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lramtop 1000 0 RAM 0 ramtop dist/default/production\MacroP2.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\MacroP2.X.production.o
-__pcinit 12FE 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
-__ptext0 133A 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
-__ptext1 125E 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
-__ptext2 10D4 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
-__ptext3 1384 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
-__ptext4 138E 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
-__ptext5 1398 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
-__ptext6 128C 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
-__ptext7 13A2 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
-__ptext8 131C 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
-__ptext9 1354 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
+__pcinit 1350 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+__ptext0 138C 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
+__ptext1 12B0 0 CODE 0 text1 dist/default/production\MacroP2.X.production.o
+__ptext2 1156 0 CODE 0 text2 dist/default/production\MacroP2.X.production.o
+__ptext3 13D6 0 CODE 0 text3 dist/default/production\MacroP2.X.production.o
+__ptext4 13E0 0 CODE 0 text4 dist/default/production\MacroP2.X.production.o
+__ptext5 13EA 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
+__ptext6 12DE 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
+__ptext7 13F4 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
+__ptext8 136E 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
+__ptext9 13A6 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
 _I2C1PIEbits 3D7A 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\MacroP2.X.production.o
 _I2C1PIRbits 3D79 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -740,8 +764,9 @@ __Ltext18 0 0 ABS 0 text18 dist/default/production\MacroP2.X.production.o
 __Ltext19 0 0 ABS 0 text19 dist/default/production\MacroP2.X.production.o
 __Ltext20 0 0 ABS 0 text20 dist/default/production\MacroP2.X.production.o
 __Ltext21 0 0 ABS 0 text21 dist/default/production\MacroP2.X.production.o
-__end_of_PWM5_Initialize 136C 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
-__ramtop 1000 0 RAM 0 ramtop C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\MacroP2.X.production.o
+__end_of_PWM5_Initialize 13BE 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\MacroP2.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MacroP2.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\MacroP2.X.production.o
@@ -753,27 +778,27 @@ _SLRCONB 3A53 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _SLRCONC 3A63 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _SLRCOND 3A73 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _SLRCONE 3A83 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAs680.\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsd9c.\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MacroP2.X.production.o
-__end_of__initialization 1316 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+__end_of__initialization 1368 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\MacroP2.X.production.o
 _ADSTATbits 3EFC 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _UART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _UART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\MacroP2.X.production.o
 __end_of_i2c1_fsmStateTable 1027 0 SMALLCONST 0 smallconst dist/default/production\MacroP2.X.production.o
-_TMR6_Initialize 128C 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
-__pcstackCOMRAM 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+_TMR6_Initialize 12DE 0 CODE 0 text6 dist/default/production\MacroP2.X.production.o
+__pcstackCOMRAM 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
 _I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__end_of_I2C1_Initialize 12FE 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
-TMR6_SetInterruptHandler@InterruptHandler 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
-_PWM5_Initialize 1354 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
-__end_of_main 1354 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
-__end_of_UART1_SetErrorHandler 13A2 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
+__end_of_I2C1_Initialize 1350 0 CODE 0 text14 dist/default/production\MacroP2.X.production.o
+TMR6_SetInterruptHandler@InterruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MacroP2.X.production.o
+_PWM5_Initialize 13A6 0 CODE 0 text9 dist/default/production\MacroP2.X.production.o
+__end_of_main 13A6 0 CODE 0 text0 dist/default/production\MacroP2.X.production.o
+__end_of_UART1_SetErrorHandler 13F4 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
 _ADACT 3EFE 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ADCAP 3EF5 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _ADCLK 3EFF 0 ABS 0 - dist/default/production\MacroP2.X.production.o
@@ -813,20 +838,21 @@ __Lbss 0 0 RAM 1 bss dist/default/production\MacroP2.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\MacroP2.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\MacroP2.X.production.o
 _I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
-__end_of_OSCILLATOR_Initialize 1384 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
-__initialization 12FE 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+__end_of_OSCILLATOR_Initialize 13D6 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
+__initialization 1350 0 CODE 0 cinit dist/default/production\MacroP2.X.production.o
+_ADCC_GetSingleConversion 124E 0 CODE 0 text21 dist/default/production\MacroP2.X.production.o
 _i2c1_fsmStateTable 1001 0 SMALLCONST 0 smallconst dist/default/production\MacroP2.X.production.o
-_UART1_SetErrorHandler 1398 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
+_UART1_SetErrorHandler 13EA 0 CODE 0 text5 dist/default/production\MacroP2.X.production.o
 _T2CONbits 3FAC 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 _I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\MacroP2.X.production.o
 __Hsmallconst 1028 0 SMALLCONST 0 smallconst dist/default/production\MacroP2.X.production.o
-__end_of_TMR6_SetInterruptHandler 13AC 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
+__end_of_TMR6_SetInterruptHandler 13FE 0 CODE 0 text7 dist/default/production\MacroP2.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\MacroP2.X.production.o
 _U1ERRIRbits 3DF9 0 ABS 0 - dist/default/production\MacroP2.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MacroP2.X.production.o
-_OSCILLATOR_Initialize 136C 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
-__end_of_TMR2_Initialize 133A 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
+_OSCILLATOR_Initialize 13BE 0 CODE 0 text12 dist/default/production\MacroP2.X.production.o
+__end_of_TMR2_Initialize 138C 0 CODE 0 text8 dist/default/production\MacroP2.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -852,10 +878,10 @@ __end_of_TMR2_Initialize 133A 0 CODE 0 text8 dist/default/production\MacroP2.X.p
 # All other numeric quantities are in decimal.
 %SEGMENTS
 ivt0x8 0 8 8 16 1
-text11 0 1028 1028 392 1
+text11 0 1028 1028 3E4 1
 reset_vec 0 0 0 4 1
 smallconst 0 1000 1000 28 1
-bssCOMRAM 1 1 1 34 1
+bssCOMRAM 1 1 1 3E 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

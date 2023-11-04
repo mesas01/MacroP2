@@ -2413,8 +2413,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/tmr6.c: 75:     T6RST = 0x00;
 [e = _T6RST -> -> 0 `i `uc ]
 "78
-[; ;mcc_generated_files/tmr6.c: 78:     T6PR = 0xE4;
-[e = _T6PR -> -> 228 `i `uc ]
+[; ;mcc_generated_files/tmr6.c: 78:     T6PR = 0xF9;
+[e = _T6PR -> -> 249 `i `uc ]
 "81
 [; ;mcc_generated_files/tmr6.c: 81:     T6TMR = 0x00;
 [e = _T6TMR -> -> 0 `i `uc ]

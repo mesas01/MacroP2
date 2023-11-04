@@ -5268,7 +5268,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA6"/>
-         <value>channel_ANA6</value>
+         <value>ADC_Amplif</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA7"/>
@@ -5728,7 +5728,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RA6"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RA7"/>
@@ -12428,7 +12428,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="TimerPeriodkey"/>
-         <value>34934.49781659389</value>
+         <value>32000.0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="clockFreq"/>
@@ -12464,7 +12464,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="periodValue"/>
-         <value>228</value>
+         <value>249</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="pinEnable"/>
@@ -12476,11 +12476,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="timerPeriod"/>
-         <value>0.000028571</value>
+         <value>0.00003125</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="timerPeriodActual"/>
-         <value>0.000028625</value>
+         <value>0.00003125</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR6" name="timerPeriodMax"/>
@@ -12868,7 +12868,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR6" registerAlias="TPR"/>
-         <value>228</value>
+         <value>249</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR6" registerAlias="TRST"/>
@@ -12928,7 +12928,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR6" registerAlias="TPR" settingAlias="PR"/>
-         <value>228</value>
+         <value>249</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR6" registerAlias="TRST" settingAlias="TRSEL"/>
@@ -14026,7 +14026,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\tmr6.c</file>
-         <hash>e4518d58c2367d2bf5bb2fb654dcf7e66f144c462a26d0e87eb41850b9abce10</hash>
+         <hash>c4472b1b9f706ad2278855f99e36745f9a5033657d5f680bb849465ece0c41d7</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\uart1.c</file>
@@ -14054,11 +14054,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>3e3773f304cfa2b2a6e410b152515a6a28c873e108b735468ad6bd5a188ca830</hash>
+         <hash>6b0588d3432553903c629876da11531d6080a31005a8866b403b5756176c2f9b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adcc.h</file>
-         <hash>8ff4eb9b5310168f423821c68485de565e32e959f270b38d542928970cec5e16</hash>
+         <hash>e1b4a982b89fa7a74062fe632ee5997aab539dee14ff0670de41eb91eb9d2e14</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>

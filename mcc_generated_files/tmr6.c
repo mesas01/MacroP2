@@ -74,8 +74,8 @@ void TMR6_Initialize(void)
     // T6RSEL T6CKIPPS pin; 
     T6RST = 0x00;
 
-    // PR6 228; 
-    T6PR = 0xE4;
+    // PR6 249; 
+    T6PR = 0xF9;
 
     // TMR6 0; 
     T6TMR = 0x00;

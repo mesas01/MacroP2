@@ -49,6 +49,10 @@
 #include "interrupt_manager.h"
 #include "mcc.h"
 
+uint16_t ADC_0_Grados = 0;
+uint16_t ADC_90_Grados = 0;
+int bandera = 0;
+
 void  INTERRUPT_Initialize (void)
 {
     // Disable Interrupt Priority Vectors (16CXXX Compatibility Mode)
@@ -61,7 +65,17 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
     {
         TMR6_ISR();
-        LED_1_Toggle();
+        
+        if(bandera == 0){
+            ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 1;
+            LED_1_SetHigh();
+        }else{
+            ADC_90_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 0;
+            LED_1_SetLow();
+        }
+        //LED_1_Toggle();
     }
     else
     {

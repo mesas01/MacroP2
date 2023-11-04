@@ -41,6 +41,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "828 mcc_generated_files/tmr6.h
 [; ;mcc_generated_files/tmr6.h: 828: void TMR6_ISR(void);
 [v _TMR6_ISR `(v ~T0 @X0 0 ef ]
+"70 mcc_generated_files/interrupt_manager.c
+[; ;mcc_generated_files/interrupt_manager.c: 70:             ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+[c E16787 0 1 6 7 59 60 61 62 63 .. ]
+[n E16787 . channel_ANA0 channel_ANA1 ADC_Amplif channel_ANA7 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"256 mcc_generated_files/adcc.h
+[; ;mcc_generated_files/adcc.h: 256: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E16787 ]
 "46710 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 46710:     struct {
 [s S2130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -2316,60 +2323,111 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 49098: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
 "52 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 52: void INTERRUPT_Initialize (void)
-[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/interrupt_manager.c: 52: uint16_t ADC_0_Grados = 0;
+[v _ADC_0_Grados `us ~T0 @X0 1 e ]
+[i _ADC_0_Grados
+-> -> 0 `i `us
+]
 "53
-[; ;mcc_generated_files/interrupt_manager.c: 53: {
+[; ;mcc_generated_files/interrupt_manager.c: 53: uint16_t ADC_90_Grados = 0;
+[v _ADC_90_Grados `us ~T0 @X0 1 e ]
+[i _ADC_90_Grados
+-> -> 0 `i `us
+]
+"54
+[; ;mcc_generated_files/interrupt_manager.c: 54: int bandera = 0;
+[v _bandera `i ~T0 @X0 1 e ]
+[i _bandera
+-> 0 `i
+]
+"56
+[; ;mcc_generated_files/interrupt_manager.c: 56: void INTERRUPT_Initialize (void)
+[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
+"57
+[; ;mcc_generated_files/interrupt_manager.c: 57: {
 {
 [e :U _INTERRUPT_Initialize ]
 [f ]
-"55
-[; ;mcc_generated_files/interrupt_manager.c: 55:     INTCON0bits.IPEN = 0;
+"59
+[; ;mcc_generated_files/interrupt_manager.c: 59:     INTCON0bits.IPEN = 0;
 [e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
-"56
-[; ;mcc_generated_files/interrupt_manager.c: 56: }
+"60
+[; ;mcc_generated_files/interrupt_manager.c: 60: }
 [e :UE 2272 ]
 }
 [v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"58
-[; ;mcc_generated_files/interrupt_manager.c: 58: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+"62
+[; ;mcc_generated_files/interrupt_manager.c: 62: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 [v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"59
-[; ;mcc_generated_files/interrupt_manager.c: 59: {
+"63
+[; ;mcc_generated_files/interrupt_manager.c: 63: {
 {
 [e :U _INTERRUPT_InterruptManager ]
 [f ]
-"61
-[; ;mcc_generated_files/interrupt_manager.c: 61:     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
-[e $ ! && == -> . . _PIE9bits 0 0 `i -> 1 `i == -> . . _PIR9bits 0 0 `i -> 1 `i 2274  ]
-"62
-[; ;mcc_generated_files/interrupt_manager.c: 62:     {
-{
-"63
-[; ;mcc_generated_files/interrupt_manager.c: 63:         TMR6_ISR();
-[e ( _TMR6_ISR ..  ]
-"64
-[; ;mcc_generated_files/interrupt_manager.c: 64:         do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0);
-[e :U 2277 ]
-{
-[e = . . _LATBbits 0 3 -> ~ -> . . _LATBbits 0 3 `i `uc ]
-}
-[e :U 2276 ]
 "65
-[; ;mcc_generated_files/interrupt_manager.c: 65:     }
-}
-[e $U 2278  ]
+[; ;mcc_generated_files/interrupt_manager.c: 65:     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
+[e $ ! && == -> . . _PIE9bits 0 0 `i -> 1 `i == -> . . _PIR9bits 0 0 `i -> 1 `i 2274  ]
 "66
-[; ;mcc_generated_files/interrupt_manager.c: 66:     else
-[e :U 2274 ]
-"67
-[; ;mcc_generated_files/interrupt_manager.c: 67:     {
+[; ;mcc_generated_files/interrupt_manager.c: 66:     {
 {
+"67
+[; ;mcc_generated_files/interrupt_manager.c: 67:         TMR6_ISR();
+[e ( _TMR6_ISR ..  ]
 "69
-[; ;mcc_generated_files/interrupt_manager.c: 69:     }
-}
-[e :U 2278 ]
+[; ;mcc_generated_files/interrupt_manager.c: 69:         if(bandera == 0){
+[e $ ! == _bandera -> 0 `i 2275  ]
+{
 "70
-[; ;mcc_generated_files/interrupt_manager.c: 70: }
+[; ;mcc_generated_files/interrupt_manager.c: 70:             ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+[e = _ADC_0_Grados ( _ADCC_GetSingleConversion (1 . `E16787 2 ]
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71:             bandera = 1;
+[e = _bandera -> 1 `i ]
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72:             do { LATBbits.LATB3 = 1; } while(0);
+[e :U 2278 ]
+{
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 2277 ]
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:         }else{
+}
+[e $U 2279  ]
+[e :U 2275 ]
+{
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74:             ADC_90_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+[e = _ADC_90_Grados ( _ADCC_GetSingleConversion (1 . `E16787 2 ]
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:             bandera = 0;
+[e = _bandera -> 0 `i ]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76:             do { LATBbits.LATB3 = 0; } while(0);
+[e :U 2282 ]
+{
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 2281 ]
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:         }
+}
+[e :U 2279 ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:     }
+}
+[e $U 2283  ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     else
+[e :U 2274 ]
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81:     {
+{
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83:     }
+}
+[e :U 2283 ]
+"84
+[; ;mcc_generated_files/interrupt_manager.c: 84: }
 [e :UE 2273 ]
 }

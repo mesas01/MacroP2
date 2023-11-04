@@ -28039,7 +28039,7 @@ typedef enum
 {
     channel_ANA0 = 0x0,
     channel_ANA1 = 0x1,
-    channel_ANA6 = 0x6,
+    ADC_Amplif = 0x6,
     channel_ANA7 = 0x7,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
@@ -28143,6 +28143,10 @@ void OSCILLATOR_Initialize(void);
 void PMD_Initialize(void);
 # 44 "main.c" 2
 
+# 1 "./FUNCIONES.h" 1
+# 36 "./FUNCIONES.h"
+uint16_t leerADC(void);
+# 45 "main.c" 2
 
 
 
@@ -28153,14 +28157,14 @@ void main(void)
     SYSTEM_Initialize();
 
     (INTCON0bits.GIE = 1);
-# 64 "main.c"
+
+
+
     uint16_t dc = 0;
 
     while (1)
     {
-
         PWM5_LoadDutyValue(249);
-
 
 
     }

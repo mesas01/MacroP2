@@ -21,7 +21,7 @@ I2C1_RESET_LINK 5
 [e E16239 . `uc
 channel_ANA0 0
 channel_ANA1 1
-channel_ANA6 6
+ADC_Amplif 6
 channel_ANA7 7
 channel_VSS 59
 channel_Temp 60
@@ -177,6 +177,18 @@ TMR6_UART1_TX_EDGE 22
 TMR6_UART2_RX_EDGE 23
 TMR6_UART2_TX_EDGE 24
 ]
+"70 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+[e E16787 . `uc
+channel_ANA0 0
+channel_ANA1 1
+ADC_Amplif 6
+channel_ANA7 7
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
 "4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
@@ -205,6 +217,8 @@ TMR6_UART2_TX_EDGE 24
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"137
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
 "142 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
 "149
@@ -337,9 +351,9 @@ TMR6_UART2_TX_EDGE 24
 [v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
 "813
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
-"52 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+"56 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
-"58
+"62
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 "50 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1214,7 +1228,7 @@ TMR6_UART2_TX_EDGE 24
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "46704
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S2413 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S2424 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -1224,7 +1238,7 @@ TMR6_UART2_TX_EDGE 24
 `uc 1 LATB7 1 0 :1:7 
 ]
 "46731
-[s S2422 . 1 `uc 1 LB0 1 0 :1:0 
+[s S2433 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -1234,10 +1248,10 @@ TMR6_UART2_TX_EDGE 24
 `uc 1 LB7 1 0 :1:7 
 ]
 "46731
-[u S2431 . 1 `S2413 1 . 1 0 `S2422 1 . 1 0 ]
+[u S2442 . 1 `S2424 1 . 1 0 `S2433 1 . 1 0 ]
 "46731
 "46731
-[v _LATBbits LATBbits `VES2431  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES2442  1 e 1 @16315 ]
 "46816
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "46928
@@ -1280,6 +1294,12 @@ TMR6_UART2_TX_EDGE 24
 ]
 "181
 [v _I2C1_Status I2C1_Status `S1352  1 e 36 0 ]
+"52 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+[v _ADC_0_Grados ADC_0_Grados `us  1 e 2 0 ]
+"53
+[v _ADC_90_Grados ADC_90_Grados `us  1 e 2 0 ]
+"54
+[v _bandera bandera `i  1 e 2 0 ]
 "58 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
 [v _TMR6_InterruptHandler TMR6_InterruptHandler `*.37(v  1 e 2 0 ]
 [s S265 . 1 `uc 1 perr 1 0 :1:0 
@@ -1299,7 +1319,7 @@ TMR6_UART2_TX_EDGE 24
 "49 C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"74
+"66
 } 0
 "50 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1314,19 +1334,19 @@ TMR6_UART2_TX_EDGE 24
 "204
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 3 ]
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
 "206
 } 0
 "200
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 3 ]
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
 "202
 } 0
 "208
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 3 ]
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
 "210
 } 0
 "64 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
@@ -1337,7 +1357,7 @@ TMR6_UART2_TX_EDGE 24
 "178
 [v _TMR6_SetInterruptHandler TMR6_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR6_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+[v TMR6_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
 "180
 } 0
 "62 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
@@ -1365,10 +1385,10 @@ TMR6_UART2_TX_EDGE 24
 {
 "77
 } 0
-"52 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+"56 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
-"56
+"60
 } 0
 "183 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
@@ -1388,13 +1408,13 @@ TMR6_UART2_TX_EDGE 24
 "74 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
 [v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
 {
-[v PWM5_LoadDutyValue@dutyValue dutyValue `us  1 p 2 3 ]
+[v PWM5_LoadDutyValue@dutyValue dutyValue `us  1 p 2 7 ]
 "81
 } 0
-"58 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+"62 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"70
+"84
 } 0
 "165 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
 [v _TMR6_ISR TMR6_ISR `(v  1 e 1 0 ]
@@ -1405,4 +1425,13 @@ TMR6_UART2_TX_EDGE 24
 [v _TMR6_DefaultInterruptHandler TMR6_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "185
+} 0
+"137 C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E16239  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E16239  1 a 1 wreg ]
+"140
+[v ADCC_GetSingleConversion@channel channel `E16239  1 a 1 4 ]
+"160
 } 0

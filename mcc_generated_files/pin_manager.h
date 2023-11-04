@@ -105,25 +105,25 @@
 #define channel_ANA1_SetAnalogMode()      do { ANSELAbits.ANSELA1 = 1; } while(0)
 #define channel_ANA1_SetDigitalMode()     do { ANSELAbits.ANSELA1 = 0; } while(0)
 
-// get/set channel_ANA6 aliases
-#define channel_ANA6_TRIS                 TRISAbits.TRISA6
-#define channel_ANA6_LAT                  LATAbits.LATA6
-#define channel_ANA6_PORT                 PORTAbits.RA6
-#define channel_ANA6_WPU                  WPUAbits.WPUA6
-#define channel_ANA6_OD                   ODCONAbits.ODCA6
-#define channel_ANA6_ANS                  ANSELAbits.ANSELA6
-#define channel_ANA6_SetHigh()            do { LATAbits.LATA6 = 1; } while(0)
-#define channel_ANA6_SetLow()             do { LATAbits.LATA6 = 0; } while(0)
-#define channel_ANA6_Toggle()             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0)
-#define channel_ANA6_GetValue()           PORTAbits.RA6
-#define channel_ANA6_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
-#define channel_ANA6_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
-#define channel_ANA6_SetPullup()          do { WPUAbits.WPUA6 = 1; } while(0)
-#define channel_ANA6_ResetPullup()        do { WPUAbits.WPUA6 = 0; } while(0)
-#define channel_ANA6_SetPushPull()        do { ODCONAbits.ODCA6 = 0; } while(0)
-#define channel_ANA6_SetOpenDrain()       do { ODCONAbits.ODCA6 = 1; } while(0)
-#define channel_ANA6_SetAnalogMode()      do { ANSELAbits.ANSELA6 = 1; } while(0)
-#define channel_ANA6_SetDigitalMode()     do { ANSELAbits.ANSELA6 = 0; } while(0)
+// get/set ADC_Amplif aliases
+#define ADC_Amplif_TRIS                 TRISAbits.TRISA6
+#define ADC_Amplif_LAT                  LATAbits.LATA6
+#define ADC_Amplif_PORT                 PORTAbits.RA6
+#define ADC_Amplif_WPU                  WPUAbits.WPUA6
+#define ADC_Amplif_OD                   ODCONAbits.ODCA6
+#define ADC_Amplif_ANS                  ANSELAbits.ANSELA6
+#define ADC_Amplif_SetHigh()            do { LATAbits.LATA6 = 1; } while(0)
+#define ADC_Amplif_SetLow()             do { LATAbits.LATA6 = 0; } while(0)
+#define ADC_Amplif_Toggle()             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0)
+#define ADC_Amplif_GetValue()           PORTAbits.RA6
+#define ADC_Amplif_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
+#define ADC_Amplif_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
+#define ADC_Amplif_SetPullup()          do { WPUAbits.WPUA6 = 1; } while(0)
+#define ADC_Amplif_ResetPullup()        do { WPUAbits.WPUA6 = 0; } while(0)
+#define ADC_Amplif_SetPushPull()        do { ODCONAbits.ODCA6 = 0; } while(0)
+#define ADC_Amplif_SetOpenDrain()       do { ODCONAbits.ODCA6 = 1; } while(0)
+#define ADC_Amplif_SetAnalogMode()      do { ANSELAbits.ANSELA6 = 1; } while(0)
+#define ADC_Amplif_SetDigitalMode()     do { ANSELAbits.ANSELA6 = 0; } while(0)
 
 // get/set channel_ANA7 aliases
 #define channel_ANA7_TRIS                 TRISAbits.TRISA7

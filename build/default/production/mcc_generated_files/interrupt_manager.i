@@ -28040,7 +28040,7 @@ typedef enum
 {
     channel_ANA0 = 0x0,
     channel_ANA1 = 0x1,
-    channel_ANA6 = 0x6,
+    ADC_Amplif = 0x6,
     channel_ANA7 = 0x7,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
@@ -28145,6 +28145,10 @@ void PMD_Initialize(void);
 # 50 "mcc_generated_files/interrupt_manager.c" 2
 
 
+uint16_t ADC_0_Grados = 0;
+uint16_t ADC_90_Grados = 0;
+int bandera = 0;
+
 void INTERRUPT_Initialize (void)
 {
 
@@ -28157,7 +28161,17 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
     {
         TMR6_ISR();
-        do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0);
+
+        if(bandera == 0){
+            ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 1;
+            do { LATBbits.LATB3 = 1; } while(0);
+        }else{
+            ADC_90_Grados = ADCC_GetSingleConversion(ADC_Amplif);
+            bandera = 0;
+            do { LATBbits.LATB3 = 0; } while(0);
+        }
+
     }
     else
     {
