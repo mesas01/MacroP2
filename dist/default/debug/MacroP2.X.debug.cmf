@@ -13,35 +13,60 @@
 %PSECTS
 $dist/default/debug\MacroP2.X.debug.o
 ivt0x8 CODE 0 8 8 12 1 2
-cinit CODE 0 1350 1350 1E 1 2
-text0 CODE 0 138C 138C 1A 1 2
-text1 CODE 0 12B0 12B0 2E 1 2
-text2 CODE 0 1156 1156 68 1 2
-text3 CODE 0 13D6 13D6 A 1 2
-text4 CODE 0 13E0 13E0 A 1 2
-text5 CODE 0 13EA 13EA A 1 2
-text6 CODE 0 12DE 12DE 2C 1 2
-text7 CODE 0 13F4 13F4 A 1 2
-text8 CODE 0 136E 136E 1E 1 2
-text9 CODE 0 13A6 13A6 18 1 2
-nvCOMRAM COMRAM 1 37 37 8 1 1
-text10 CODE 0 130A 130A 24 1 2
-text11 CODE 0 1028 1028 AC 1 2
-text12 CODE 0 13BE 13BE 18 1 2
-text13 CODE 0 1406 1406 4 1 2
-text14 CODE 0 132E 132E 22 1 2
-text15 CODE 0 13FE 13FE 8 1 2
-text16 CODE 0 11BE 11BE 5C 1 2
-text17 CODE 0 121A 121A 34 1 2
-text18 CODE 0 10D4 10D4 82 1 2
-text19 CODE 0 1280 1280 30 1 2
-text20 CODE 0 140A 140A 2 1 2
-text21 CODE 0 124E 124E 32 1 2
-cstackCOMRAM COMRAM 1 2C 2C B 1 1
-smallconst SMALLCONST 0 1000 1000 28 1 2
-bssCOMRAM COMRAM 1 1 1 2B 1 1
+cinit CODE 0 29A6 29A6 56 1 2
+text0 CODE 0 2C74 2C74 1C 1 2
+text1 CODE 0 2B22 2B22 32 1 2
+text2 CODE 0 28DA 28DA 70 1 2
+text3 CODE 0 2CE6 2CE6 A 1 2
+text4 CODE 0 2CF0 2CF0 A 1 2
+text5 CODE 0 2CFA 2CFA A 1 2
+text6 CODE 0 2BB8 2BB8 2E 1 2
+text7 CODE 0 2D04 2D04 A 1 2
+text8 CODE 0 2C56 2C56 1E 1 2
+text9 CODE 0 2CAA 2CAA 18 1 2
+text10 CODE 0 2C10 2C10 24 1 2
+text11 CODE 0 2782 2782 AC 1 2
+text12 CODE 0 2CC2 2CC2 18 1 2
+text13 CODE 0 2D24 2D24 4 1 2
+text14 CODE 0 2C34 2C34 22 1 2
+text15 CODE 0 2D18 2D18 8 1 2
+text16 CODE 0 2CDA 2CDA C 1 2
+text17 CODE 0 294A 294A 5C 1 2
+text18 CODE 0 2A84 2A84 36 1 2
+text19 CODE 0 1D02 1D02 284 1 2
+text20 CODE 0 2ABA 2ABA 34 1 2
+text21 CODE 0 2A42 2A42 42 1 2
+text22 CODE 0 1F86 1F86 1CE 1 2
+text23 CODE 0 282E 282E AC 1 2
+text24 CODE 0 2D0E 2D0E A 1 2
+text25 CODE 0 2AEE 2AEE 34 1 2
+text26 CODE 0 26D2 26D2 B0 1 2
+text27 CODE 0 260E 260E C4 1 2
+text28 CODE 0 2514 2514 FA 1 2
+text29 CODE 0 29FC 29FC 46 1 2
+text30 CODE 0 105A 105A 4C0 1 2
+text31 CODE 0 151A 151A 44E 1 2
+text32 CODE 0 1968 1968 39A 1 2
+text33 CODE 0 2154 2154 1B4 1 2
+text34 CODE 0 2308 2308 108 1 2
+text35 CODE 0 2410 2410 104 1 2
+text36 CODE 0 2BE6 2BE6 2A 1 2
+text37 CODE 0 2C90 2C90 1A 1 2
+text38 CODE 0 2B54 2B54 32 1 2
+text39 CODE 0 2D28 2D28 2 1 2
+text40 CODE 0 2B86 2B86 32 1 2
+nvBANK0 BANK0 1 ED ED 8 1 1
+cstackCOMRAM COMRAM 1 1 1 5E 1 1
+cstackBANK0 BANK0 1 D5 D5 18 1 1
+cstackBANK1 BANK1 1 100 100 4 1 1
+bssBANK0 BANK0 1 60 60 75 1 1
+smallconst SMALLCONST 0 1000 1000 5A 1 2
+idataBANK0 CODE 0 2D20 2D20 4 1 1
+dataBANK0 BANK0 1 F5 F5 4 1 1
+bssBIGRAM BIGRAM 1 104 104 200 1 1
+bssCOMRAM COMRAM 1 5F 5F 1 1 1
 config CONFIG 4 300000 300000 A 1 1
-$C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+$C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 init CODE 0 1A 1A 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 A 1 1
@@ -51,12 +76,11 @@ config CONFIG 4 300000 300000 A 1 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 60-FFF 1
+RAM F9-FF 1
+RAM 304-FFF 1
 SFR 3800-3FFF 1
-BANK0 60-FF 1
-BANK1 100-1FF 1
-BANK2 200-2FF 1
-BANK3 300-3FF 1
+BANK0 F9-FF 1
+BANK3 304-3FF 1
 BANK4 400-4FF 1
 BANK5 500-5FF 1
 BANK6 600-6FF 1
@@ -65,23 +89,23 @@ BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST 1E-FFF 1
-CONST 140C-FFFF 1
+CONST 2D2A-FFFF 1
 IDLOC 200000-20000F 1
-SMALLCONST 140C-FFFF 1
+SMALLCONST 2D2A-FFFF 1
 CODE 4-7 1
 CODE 1E-FFF 1
-CODE 140C-FFFF 1
+CODE 2D2A-FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-EFF 1
 BANK15 F00-FFF 1
-BIGRAM 3F-FFF 1
+BIGRAM F9-FF 1
+BIGRAM 304-FFF 1
 BIGSFR 3800-3FFF 1
-COMRAM 3F-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 140C-FFFF 1
+MEDIUMCONST 2D2A-FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -96,239 +120,745 @@ MEDIUMCONST 140C-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\MacroP2.X.debug.o
-124E text21 CODE >137:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1250 text21 CODE >140:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1256 text21 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-125A text21 CODE >146:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-125C text21 CODE >149:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-125E text21 CODE >153:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-125E text21 CODE >155:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-126C text21 CODE >159:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-127E text21 CODE >160:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-140A text20 CODE >182:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-140A text20 CODE >185:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1280 text19 CODE >165:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1280 text19 CODE >169:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1284 text19 CODE >171:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1296 text19 CODE >173:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12AE text19 CODE >175:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-10D4 text18 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-10E0 text18 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-10FE text18 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1102 text18 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1114 text18 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1122 text18 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-112A text18 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1130 text18 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-113E text18 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1146 text18 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1148 text18 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-121A text17 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-121A text17 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-1232 text17 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-124C text17 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-11BE text16 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11BE text16 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11C4 text16 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11C8 text16 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11CC text16 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D0 text16 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D4 text16 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11D8 text16 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11DC text16 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E0 text16 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E4 text16 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11E8 text16 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11EC text16 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F0 text16 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F4 text16 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11F8 text16 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-11FC text16 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1200 text16 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1204 text16 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1208 text16 CODE >102:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-120C text16 CODE >104:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1210 text16 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1214 text16 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-1218 text16 CODE >111:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
-13FE text15 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-13FE text15 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-1404 text15 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
-132E text14 CODE >183:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-132E text14 CODE >186:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1334 text14 CODE >188:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1338 text14 CODE >190:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-133C text14 CODE >192:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1340 text14 CODE >194:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1344 text14 CODE >196:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1348 text14 CODE >198:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-134C text14 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-134E text14 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
-1406 text13 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1406 text13 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-1408 text13 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
-13BE text12 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13BE text12 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13C4 text12 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13C8 text12 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13CC text12 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13D0 text12 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13D4 text12 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1028 text11 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1028 text11 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-102C text11 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1030 text11 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1034 text11 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1038 text11 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-103C text11 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1040 text11 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1042 text11 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1046 text11 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-104A text11 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-104C text11 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1050 text11 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1054 text11 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1058 text11 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-105C text11 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-105E text11 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1062 text11 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1066 text11 CODE >89:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-106A text11 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-106E text11 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1072 text11 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1076 text11 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-107A text11 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-107E text11 CODE >99:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1082 text11 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1086 text11 CODE >101:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-108A text11 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-108E text11 CODE >107:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1092 text11 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-1096 text11 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-109A text11 CODE >110:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-109E text11 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10A0 text11 CODE >116:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10A2 text11 CODE >117:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10A4 text11 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10A6 text11 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10AA text11 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10AC text11 CODE >125:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10AE text11 CODE >126:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10B0 text11 CODE >127:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10B2 text11 CODE >128:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10B6 text11 CODE >137:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10BA text11 CODE >138:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10BE text11 CODE >139:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10C2 text11 CODE >140:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10C6 text11 CODE >141:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10CA text11 CODE >142:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10CE text11 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-10D2 text11 CODE >144:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
-130A text10 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-130A text10 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1310 text10 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1314 text10 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1318 text10 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-131C text10 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1320 text10 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1324 text10 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-1328 text10 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-132C text10 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-13A6 text9 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-13A6 text9 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-13AA text9 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-13AE text9 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-13B2 text9 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-13BC text9 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
-136E text8 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-136E text8 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1372 text8 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1376 text8 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-137A text8 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-137E text8 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1382 text8 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-1386 text8 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-138A text8 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
-13F4 text7 CODE >178:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13F4 text7 CODE >179:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13FC text7 CODE >180:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12DE text6 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12DE text6 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12E2 text6 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12E6 text6 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12EA text6 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12EE text6 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12F2 text6 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12F6 text6 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-12F8 text6 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1304 text6 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-1308 text6 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
-13EA text5 CODE >208:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13EA text5 CODE >209:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13F2 text5 CODE >210:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13E0 text4 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13E0 text4 CODE >201:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13E8 text4 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13D6 text3 CODE >204:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13D6 text3 CODE >205:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-13DE text3 CODE >206:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1156 text2 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1156 text2 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-115C text2 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1160 text2 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1164 text2 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1168 text2 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-116C text2 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1170 text2 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1174 text2 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1178 text2 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-117C text2 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1180 text2 CODE >103:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1184 text2 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1188 text2 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-118C text2 CODE >112:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1190 text2 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-1194 text2 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-11A0 text2 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-11AC text2 CODE >120:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-11B8 text2 CODE >122:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-11BC text2 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
-12B0 text1 CODE >50:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12B0 text1 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12B4 text1 CODE >53:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12B8 text1 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12BC text1 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12C0 text1 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12C4 text1 CODE >57:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12C8 text1 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12CC text1 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12D0 text1 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12D4 text1 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12D8 text1 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-12DC text1 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
-138C text0 CODE >49:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-138C text0 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1390 text0 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1392 text0 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1392 text0 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
-1350 cinit CODE >18768:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1350 cinit CODE >18770:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1350 cinit CODE >18773:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1350 cinit CODE >18796:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1354 cinit CODE >18797:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1356 cinit CODE >18798:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1356 cinit CODE >18799:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1358 cinit CODE >18800:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-135A cinit CODE >18801:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-135C cinit CODE >18809:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-135E cinit CODE >18810:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1360 cinit CODE >18811:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1362 cinit CODE >18812:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1364 cinit CODE >18813:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1366 cinit CODE >18814:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1368 cinit CODE >18820:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-1368 cinit CODE >18822:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
-136A cinit CODE >18823:C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_1.s
+2B86 text40 CODE >137:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B88 text40 CODE >140:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B8E text40 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B92 text40 CODE >146:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B94 text40 CODE >149:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B96 text40 CODE >153:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2B96 text40 CODE >155:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2BA4 text40 CODE >159:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2BB6 text40 CODE >160:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2D28 text39 CODE >182:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2D28 text39 CODE >185:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2B54 text38 CODE >165:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2B54 text38 CODE >169:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2B58 text38 CODE >171:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2B6C text38 CODE >173:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2B84 text38 CODE >175:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2C90 text37 CODE >170:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2C92 text37 CODE >172:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2C92 text37 CODE >174:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CA2 text37 CODE >176:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CA8 text37 CODE >177:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2BE6 text36 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2BE6 text36 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2BEA text36 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2BF6 text36 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2BF8 text36 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2C0E text36 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2410 text35 CODE >4:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+2410 text35 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+243E text35 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+244E text35 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+247C text35 CODE >10:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+248C text35 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+249A text35 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+24AC text35 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+24BA text35 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+24CC text35 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+24DC text35 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+24EC text35 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+2512 text35 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+2308 text34 CODE >43:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2308 text34 CODE >47:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2320 text34 CODE >48:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2334 text34 CODE >49:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+235E text34 CODE >50:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2360 text34 CODE >51:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2370 text34 CODE >52:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2374 text34 CODE >53:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2382 text34 CODE >54:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+239A text34 CODE >57:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23AE text34 CODE >60:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23C2 text34 CODE >63:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23CC text34 CODE >64:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23CE text34 CODE >62:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23DE text34 CODE >67:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23EE text34 CODE >68:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+23FE text34 CODE >69:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+240E text34 CODE >70:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+2154 text33 CODE >10:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2156 text33 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2174 text33 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21A6 text33 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21AA text33 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21AA text33 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21BA text33 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21D0 text33 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21E4 text33 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21E8 text33 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21EC text33 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21EE text33 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+21F8 text33 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+222A text33 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+222C text33 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2238 text33 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2242 text33 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2242 text33 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2274 text33 CODE >34:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2276 text33 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2280 text33 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+229E text33 CODE >37:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22AC text33 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22AE text33 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22B2 text33 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22D6 text33 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22F4 text33 CODE >42:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+22F6 text33 CODE >43:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+2306 text33 CODE >44:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+1968 text32 CODE >11:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1968 text32 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+196E text32 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1974 text32 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1982 text32 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1984 text32 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1994 text32 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19A4 text32 CODE >37:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19B4 text32 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19B6 text32 CODE >42:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19BA text32 CODE >43:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19BE text32 CODE >46:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19CE text32 CODE >49:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19D4 text32 CODE >50:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19DA text32 CODE >51:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19E8 text32 CODE >52:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19EA text32 CODE >56:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+19FA text32 CODE >58:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A0A text32 CODE >60:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A1A text32 CODE >63:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A1C text32 CODE >65:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A20 text32 CODE >66:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A24 text32 CODE >69:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A34 text32 CODE >75:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A4A text32 CODE >76:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A5A text32 CODE >77:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A62 text32 CODE >78:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A66 text32 CODE >79:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A7A text32 CODE >83:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A8A text32 CODE >84:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A8A text32 CODE >85:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1A9E text32 CODE >89:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AB8 text32 CODE >92:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AC8 text32 CODE >93:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AD8 text32 CODE >94:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AE8 text32 CODE >96:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AEC text32 CODE >97:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1AF0 text32 CODE >100:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B00 text32 CODE >101:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B0A text32 CODE >102:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B14 text32 CODE >103:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B22 text32 CODE >104:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B24 text32 CODE >105:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B24 text32 CODE >106:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B2E text32 CODE >112:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B4C text32 CODE >115:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B4E text32 CODE >116:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B5E text32 CODE >118:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B60 text32 CODE >97:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B60 text32 CODE >119:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B70 text32 CODE >122:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B86 text32 CODE >123:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B8C text32 CODE >128:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1B96 text32 CODE >129:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BA4 text32 CODE >130:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BA6 text32 CODE >131:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BA6 text32 CODE >132:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BB0 text32 CODE >133:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BB6 text32 CODE >127:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BC4 text32 CODE >139:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BC8 text32 CODE >140:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1BD6 text32 CODE >141:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C04 text32 CODE >142:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C08 text32 CODE >143:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C0C text32 CODE >144:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C0C text32 CODE >145:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C1E text32 CODE >149:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C1E text32 CODE >150:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C2E text32 CODE >151:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C3A text32 CODE >152:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C48 text32 CODE >153:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C72 text32 CODE >154:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C76 text32 CODE >159:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C90 text32 CODE >160:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1C96 text32 CODE >161:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CA6 text32 CODE >165:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CC0 text32 CODE >166:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CC8 text32 CODE >167:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CD8 text32 CODE >169:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CDC text32 CODE >173:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CE0 text32 CODE >175:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CEE text32 CODE >176:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CF0 text32 CODE >177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CF4 text32 CODE >180:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1CF6 text32 CODE >182:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+1D00 text32 CODE >185:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+151A text31 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+151A text31 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1520 text31 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1526 text31 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1534 text31 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1536 text31 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1546 text31 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1556 text31 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1566 text31 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1568 text31 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+156C text31 CODE >36:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+157C text31 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1582 text31 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1588 text31 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1596 text31 CODE >42:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1598 text31 CODE >45:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15A8 text31 CODE >48:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15B8 text31 CODE >50:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15C8 text31 CODE >53:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15CA text31 CODE >54:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15CE text31 CODE >57:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15DE text31 CODE >58:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15DE text31 CODE >65:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+15FE text31 CODE >66:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1612 text31 CODE >95:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1622 text31 CODE >96:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+162C text31 CODE >97:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1636 text31 CODE >98:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1646 text31 CODE >99:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1652 text31 CODE >100:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+165E text31 CODE >101:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+166E text31 CODE >102:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+167A text31 CODE >103:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1686 text31 CODE >104:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1694 text31 CODE >105:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16A4 text31 CODE >106:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16B4 text31 CODE >107:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16C4 text31 CODE >108:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16D4 text31 CODE >109:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16E2 text31 CODE >110:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+16F2 text31 CODE >111:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1702 text31 CODE >112:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1712 text31 CODE >113:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1722 text31 CODE >114:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1732 text31 CODE >115:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1742 text31 CODE >116:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1752 text31 CODE >117:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+177C text31 CODE >145:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17B2 text31 CODE >146:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17C0 text31 CODE >149:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17DA text31 CODE >152:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17DE text31 CODE >153:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17E8 text31 CODE >154:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17F6 text31 CODE >155:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17F8 text31 CODE >156:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+17F8 text31 CODE >157:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1802 text31 CODE >158:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1808 text31 CODE >152:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1816 text31 CODE >163:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+181A text31 CODE >164:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1828 text31 CODE >165:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1856 text31 CODE >166:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+185A text31 CODE >167:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+185E text31 CODE >168:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+185E text31 CODE >169:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1870 text31 CODE >173:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1870 text31 CODE >174:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1880 text31 CODE >175:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+188C text31 CODE >176:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+189A text31 CODE >177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+18C4 text31 CODE >178:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+18C8 text31 CODE >183:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+18E2 text31 CODE >184:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+18F2 text31 CODE >185:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+18F6 text31 CODE >187:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1910 text31 CODE >188:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1920 text31 CODE >190:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1924 text31 CODE >191:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1928 text31 CODE >192:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1928 text31 CODE >194:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+192C text31 CODE >195:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+193C text31 CODE >196:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+194A text31 CODE >197:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+194C text31 CODE >199:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1952 text31 CODE >201:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1956 text31 CODE >203:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+1966 text31 CODE >205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+105A text30 CODE >10:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+105A text30 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1060 text30 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1066 text30 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1074 text30 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1076 text30 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1086 text30 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1096 text30 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10A6 text30 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10A8 text30 CODE >37:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10AC text30 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10B0 text30 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10C0 text30 CODE >44:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10C6 text30 CODE >46:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10D8 text30 CODE >47:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10DA text30 CODE >49:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10E0 text30 CODE >50:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10EE text30 CODE >51:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+10F0 text30 CODE >55:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1100 text30 CODE >57:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1110 text30 CODE >59:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1120 text30 CODE >62:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1122 text30 CODE >64:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1126 text30 CODE >65:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+112A text30 CODE >68:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+113A text30 CODE >75:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+114C text30 CODE >77:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+115A text30 CODE >78:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+115E text30 CODE >81:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1162 text30 CODE >82:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1166 text30 CODE >83:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+116A text30 CODE >84:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+116E text30 CODE >85:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1172 text30 CODE >86:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1176 text30 CODE >87:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+117A text30 CODE >88:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+117E text30 CODE >89:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1182 text30 CODE >90:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1186 text30 CODE >91:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+118A text30 CODE >92:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+118E text30 CODE >93:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1192 text30 CODE >94:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1196 text30 CODE >95:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+119A text30 CODE >98:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+119E text30 CODE >100:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11C8 text30 CODE >101:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11E4 text30 CODE >102:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11F4 text30 CODE >103:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11F8 text30 CODE >104:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11FC text30 CODE >106:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+11FC text30 CODE >109:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+120A text30 CODE >110:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1212 text30 CODE >111:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1216 text30 CODE >113:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+121A text30 CODE >115:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1228 text30 CODE >116:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+122A text30 CODE >118:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1234 text30 CODE >119:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1236 text30 CODE >106:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1236 text30 CODE >120:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1248 text30 CODE >121:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1248 text30 CODE >124:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1256 text30 CODE >127:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1266 text30 CODE >128:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+127A text30 CODE >132:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+128A text30 CODE >134:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1298 text30 CODE >135:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12A6 text30 CODE >136:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12AE text30 CODE >137:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12B2 text30 CODE >139:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12B6 text30 CODE >141:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12C4 text30 CODE >142:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12C6 text30 CODE >144:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12D0 text30 CODE >145:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12D6 text30 CODE >153:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+12FC text30 CODE >154:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+132C text30 CODE >155:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1330 text30 CODE >156:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1332 text30 CODE >157:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1342 text30 CODE >158:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1352 text30 CODE >162:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1362 text30 CODE >163:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1362 text30 CODE >166:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1388 text30 CODE >167:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+139C text30 CODE >172:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13A6 text30 CODE >173:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13B4 text30 CODE >174:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13B6 text30 CODE >176:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13C4 text30 CODE >177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13C8 text30 CODE >178:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13CC text30 CODE >180:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13D0 text30 CODE >182:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13E0 text30 CODE >183:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13E2 text30 CODE >171:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13F0 text30 CODE >192:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+13F4 text30 CODE >193:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1402 text30 CODE >194:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1418 text30 CODE >195:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+141C text30 CODE >196:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1420 text30 CODE >197:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1420 text30 CODE >198:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1432 text30 CODE >202:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1432 text30 CODE >203:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1442 text30 CODE >204:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+144E text30 CODE >205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+145C text30 CODE >206:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1486 text30 CODE >207:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1496 text30 CODE >208:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1498 text30 CODE >215:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14B8 text30 CODE >216:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14C8 text30 CODE >218:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14D8 text30 CODE >219:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14DC text30 CODE >225:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14EA text30 CODE >226:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14EC text30 CODE >227:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14F0 text30 CODE >230:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14F2 text30 CODE >232:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+14F8 text30 CODE >233:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1506 text30 CODE >234:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1508 text30 CODE >236:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+1518 text30 CODE >237:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+29FC text29 CODE >245:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+29FC text29 CODE >248:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+2A0C text29 CODE >249:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+2A40 text29 CODE >250:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+2514 text28 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2514 text28 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+260C text28 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+260E text27 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+260E text27 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2612 text27 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2620 text27 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2628 text27 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+262C text27 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+263A text27 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2642 text27 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2646 text27 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+264E text27 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2660 text27 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2664 text27 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2668 text27 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+266E text27 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2670 text27 CODE >25:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+267E text27 CODE >30:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+2684 text27 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+269A text27 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26A2 text27 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26A4 text27 CODE >35:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26AA text27 CODE >36:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26B0 text27 CODE >38:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26C0 text27 CODE >39:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26C8 text27 CODE >40:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26D0 text27 CODE >41:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+26D2 text26 CODE >7:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26D2 text26 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26D6 text26 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26E4 text26 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26EC text26 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26F0 text26 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+26FE text26 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2706 text26 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2718 text26 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+271C text26 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2720 text26 CODE >22:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2726 text26 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2728 text26 CODE >21:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2736 text26 CODE >26:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+274C text26 CODE >27:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2754 text26 CODE >28:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+275A text26 CODE >29:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2760 text26 CODE >31:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2770 text26 CODE >32:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2778 text26 CODE >33:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2780 text26 CODE >34:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awmod.c
+2AEE text25 CODE >1:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+2AEE text25 CODE >3:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+2B20 text25 CODE >4:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+2D0E text24 CODE >184:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2D10 text24 CODE >186:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2D16 text24 CODE >187:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+282E text23 CODE >8:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+282E text23 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+284E text23 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+2854 text23 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+2858 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+28A6 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+28C8 text23 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+28D8 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+1F86 text22 CODE >1177:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1F86 text22 CODE >1201:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1FAC text22 CODE >1202:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1FB4 text22 CODE >1204:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1FC2 text22 CODE >1205:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1FC6 text22 CODE >1291:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+1FD0 text22 CODE >1361:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2010 text22 CODE >1404:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+202C text22 CODE >1406:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2036 text22 CODE >1408:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+203A text22 CODE >1409:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+204E text22 CODE >1411:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+207E text22 CODE >1412:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+209A text22 CODE >1416:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+20BC text22 CODE >1417:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+20DC text22 CODE >1418:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+20EE text22 CODE >1424:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+210A text22 CODE >1423:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2120 text22 CODE >1806:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+212C text22 CODE >1811:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2152 text22 CODE >1814:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A42 text21 CODE >1817:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A42 text21 CODE >1822:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A46 text21 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A4A text21 CODE >1830:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A5A text21 CODE >1826:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A7A text21 CODE >1835:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2A82 text21 CODE >1840:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+2ABA text20 CODE >9:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2ABA text20 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2ABE text20 CODE >16:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2AC2 text20 CODE >17:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2ACA text20 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2AD2 text20 CODE >19:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2AE2 text20 CODE >20:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+2AEC text20 CODE >23:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+1D02 text19 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1D26 text19 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1D44 text19 CODE >95:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1D48 text19 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1D70 text19 CODE >99:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1DC8 text19 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E06 text19 CODE >103:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E38 text19 CODE >104:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E48 text19 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E60 text19 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E68 text19 CODE >112:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1E9A text19 CODE >113:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F0A text19 CODE >116:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F16 text19 CODE >117:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F1E text19 CODE >120:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F32 text19 CODE >121:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F3A text19 CODE >122:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F3E text19 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F4E text19 CODE >129:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+1F60 text19 CODE >136:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2A84 text18 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2A84 text18 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2A9E text18 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2AB8 text18 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+294A text17 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+294A text17 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2950 text17 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2954 text17 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2958 text17 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+295C text17 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2960 text17 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2964 text17 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2968 text17 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+296C text17 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2970 text17 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2974 text17 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2978 text17 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+297C text17 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2980 text17 CODE >92:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2984 text17 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2988 text17 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+298C text17 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2990 text17 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2994 text17 CODE >102:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2998 text17 CODE >104:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+299C text17 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+29A0 text17 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+29A4 text17 CODE >111:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/adcc.c
+2CDA text16 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/dac1.c
+2CDA text16 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/dac1.c
+2CE0 text16 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/dac1.c
+2CE4 text16 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/dac1.c
+2D18 text15 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+2D18 text15 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+2D1E text15 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/fvr.c
+2C34 text14 CODE >183:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C34 text14 CODE >186:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C3A text14 CODE >188:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C3E text14 CODE >190:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C42 text14 CODE >192:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C46 text14 CODE >194:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C4A text14 CODE >196:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C4E text14 CODE >198:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C52 text14 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2C54 text14 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/i2c1_master.c
+2D24 text13 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2D24 text13 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2D26 text13 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/interrupt_manager.c
+2CC2 text12 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CC2 text12 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CC8 text12 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CCC text12 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CD0 text12 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CD4 text12 CODE >77:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CD8 text12 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2782 text11 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2782 text11 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2786 text11 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+278A text11 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+278E text11 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2792 text11 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2796 text11 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+279A text11 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+279C text11 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27A0 text11 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27A4 text11 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27A6 text11 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27AA text11 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27AE text11 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27B2 text11 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27B6 text11 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27B8 text11 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27BC text11 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27C0 text11 CODE >89:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27C4 text11 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27C8 text11 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27CC text11 CODE >96:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27D0 text11 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27D4 text11 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27D8 text11 CODE >99:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27DC text11 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27E0 text11 CODE >101:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27E4 text11 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27E8 text11 CODE >107:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27EC text11 CODE >108:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27F0 text11 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27F4 text11 CODE >110:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27F8 text11 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27FA text11 CODE >116:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27FC text11 CODE >117:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+27FE text11 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2800 text11 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2804 text11 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2806 text11 CODE >125:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2808 text11 CODE >126:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+280A text11 CODE >127:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+280C text11 CODE >128:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2810 text11 CODE >137:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2814 text11 CODE >138:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2818 text11 CODE >139:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+281C text11 CODE >140:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2820 text11 CODE >141:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2824 text11 CODE >142:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2828 text11 CODE >143:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+282C text11 CODE >144:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pin_manager.c
+2C10 text10 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C10 text10 CODE >83:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C16 text10 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C1A text10 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C1E text10 CODE >89:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C22 text10 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C26 text10 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C2A text10 CODE >95:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C2E text10 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C32 text10 CODE >98:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2CAA text9 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2CAA text9 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2CAE text9 CODE >65:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2CB2 text9 CODE >68:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2CB6 text9 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2CC0 text9 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/pwm5.c
+2C56 text8 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C56 text8 CODE >67:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C5A text8 CODE >70:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C5E text8 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C62 text8 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C66 text8 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C6A text8 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C6E text8 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2C72 text8 CODE >86:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr2.c
+2D04 text7 CODE >178:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2D04 text7 CODE >179:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2D0C text7 CODE >180:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BB8 text6 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BB8 text6 CODE >69:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BBC text6 CODE >72:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BC0 text6 CODE >75:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BC4 text6 CODE >78:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BC8 text6 CODE >81:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BCC text6 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BD0 text6 CODE >87:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BD2 text6 CODE >90:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BE0 text6 CODE >93:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2BE4 text6 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/tmr6.c
+2CFA text5 CODE >208:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CFA text5 CODE >209:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2D02 text5 CODE >210:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CF0 text4 CODE >200:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CF0 text4 CODE >201:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CF8 text4 CODE >202:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CE6 text3 CODE >204:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CE6 text3 CODE >205:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2CEE text3 CODE >206:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28DA text2 CODE >66:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28DA text2 CODE >73:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28E0 text2 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28E4 text2 CODE >79:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28E8 text2 CODE >82:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28EC text2 CODE >85:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28F0 text2 CODE >88:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28F4 text2 CODE >91:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28F8 text2 CODE >94:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+28FC text2 CODE >97:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2900 text2 CODE >100:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2904 text2 CODE >103:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2908 text2 CODE >106:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+290C text2 CODE >109:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2910 text2 CODE >112:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2914 text2 CODE >115:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2918 text2 CODE >118:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2926 text2 CODE >119:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2934 text2 CODE >120:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2942 text2 CODE >122:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2948 text2 CODE >124:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/uart1.c
+2B22 text1 CODE >50:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B22 text1 CODE >52:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B26 text1 CODE >53:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B2A text1 CODE >54:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B2E text1 CODE >55:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B32 text1 CODE >56:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B36 text1 CODE >57:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B3A text1 CODE >58:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B3E text1 CODE >59:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B42 text1 CODE >60:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B46 text1 CODE >61:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B4A text1 CODE >62:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B4E text1 CODE >63:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2B52 text1 CODE >64:C:\Users\mesas\MPLABXProjects\MacroP2.X\mcc_generated_files/mcc.c
+2C74 text0 CODE >71:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+2C74 text0 CODE >74:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+2C78 text0 CODE >76:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+2C7A text0 CODE >80:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+2C7A text0 CODE >84:C:\Users\mesas\MPLABXProjects\MacroP2.X\main.c
+29A6 cinit CODE >20376:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29A6 cinit CODE >20378:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29A6 cinit CODE >20381:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29A6 cinit CODE >20452:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29A8 cinit CODE >20453:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29AA cinit CODE >20454:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29AC cinit CODE >20455:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29AE cinit CODE >20456:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29B0 cinit CODE >20457:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29B2 cinit CODE >20458:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29B6 cinit CODE >20459:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29BA cinit CODE >20460:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29BA cinit CODE >20461:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29BC cinit CODE >20462:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29C2 cinit CODE >20463:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29C4 cinit CODE >20464:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29C6 cinit CODE >20465:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29C8 cinit CODE >20469:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29CC cinit CODE >20470:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D0 cinit CODE >20471:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D0 cinit CODE >20472:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D2 cinit CODE >20473:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D4 cinit CODE >20474:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D6 cinit CODE >20475:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29D8 cinit CODE >20476:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29DA cinit CODE >20477:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29DC cinit CODE >20480:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E0 cinit CODE >20481:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E2 cinit CODE >20482:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E2 cinit CODE >20483:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E4 cinit CODE >20484:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E6 cinit CODE >20485:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29E8 cinit CODE >20488:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29EA cinit CODE >20496:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29EC cinit CODE >20497:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29EE cinit CODE >20498:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F0 cinit CODE >20499:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F2 cinit CODE >20500:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F4 cinit CODE >20501:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F6 cinit CODE >20507:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F6 cinit CODE >20509:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
+29F8 cinit CODE >20510:C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -341,24 +871,31 @@ $dist/default/debug\MacroP2.X.debug.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
+___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/debug\MacroP2.X.debug.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\MacroP2.X.debug.o
-_I2C1_Initialize 132E 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
-__Hspace_0 140C 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__Hspace_1 3F 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_I2C1_Initialize 2C34 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
+__Hspace_0 2D2A 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__Hspace_1 304 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/debug\MacroP2.X.debug.o
 _PWM5CON 3F6E 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PWM5DCH 3F6D 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PWM5DCL 3F6C 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\MacroP2.X.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+__end_of_UART_SendString 2C10 0 CODE 0 text36 dist/default/debug\MacroP2.X.debug.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\MacroP2.X.debug.o
-__end_of_UART1_SetFramingErrorHandler 13EA 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
-__end_of_UART1_SetOverrunErrorHandler 13E0 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
-__end_of_INTERRUPT_Initialize 140A 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
-_PMD_Initialize 130A 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
+__end_of_UART1_SetFramingErrorHandler 2CFA 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
+__end_of_UART1_SetOverrunErrorHandler 2CF0 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
+__end_of_INTERRUPT_Initialize 2D28 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
+_PMD_Initialize 2C10 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\MacroP2.X.debug.o
-UART1_SetOverrunErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+UART1_SetOverrunErrorHandler@interruptHandler 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
+?_abs 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?_map 4B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?_vfprintf 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
 _LATA 3FBA 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _LATB 3FBB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -382,33 +919,52 @@ _WPUB 3A51 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _WPUC 3A61 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _WPUD 3A71 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _WPUE 3A81 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-_main 138C 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
-___stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-start 1A 0 CODE 0 init C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+___sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+_dbuf 84 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+_main 2C74 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
+_prec B6 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+abs@a 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+map@x 4B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug\MacroP2.X.debug.o
+start 1A 0 CODE 0 init C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___flmul@aexp 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@bexp 2B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@prod 2C 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@sign 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@temp 30 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-_ADC_90_Grados 27 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-?_ADCC_GetSingleConversion 2C 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_ADC_90_Grados BC 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+_DAC1CON0 3E9E 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_DAC1CON1 3E9C 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/debug\MacroP2.X.debug.o
+?_ADCC_GetSingleConversion 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_IDLE 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_UART1_ErrorHandler 39 0 COMRAM 1 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
-_TMR2_Initialize 136E 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
+_UART1_ErrorHandler EF 0 BANK0 1 nvBANK0 dist/default/debug\MacroP2.X.debug.o
+__end_of_vfpfcnvrt 2154 0 CODE 0 text22 dist/default/debug\MacroP2.X.debug.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_TMR2_Initialize 2C56 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RX_EMPTY 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
-__accesstop 60 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug\MacroP2.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 _T6HLTbits 3F95 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-intlevel0 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+intlevel1 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+intlevel2 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+intlevel3 0 0 CODE 0 text C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\MacroP2.X.debug.o
+_UART_SendString 2BE6 0 CODE 0 text36 dist/default/debug\MacroP2.X.debug.o
 _wr2RegCompleteHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug\MacroP2.X.debug.o
-__end_of_PMD_Initialize 132E 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
+__end_of_PMD_Initialize 2C34 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
+___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/debug\MacroP2.X.debug.o
+_vfpfcnvrt 1F86 0 CODE 0 text22 dist/default/debug\MacroP2.X.debug.o
+__end_of_DAC1_Initialize 2CE6 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
 _U1ERRIE 3DFA 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1ERRIR 3DF9 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/debug\MacroP2.X.debug.o
@@ -439,35 +995,59 @@ _ANSELB 3A50 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ANSELC 3A60 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ANSELD 3A70 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ANSELE 3A80 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_FVR_Initialize 13FE 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+_FVR_Initialize 2D18 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
+___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 _I2C1CON0 3D73 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1CON1 3D74 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1CON2 3D75 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 _T6RSTbits 3F97 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_puntoDeQuiebre F5 0 BANK0 1 dataBANK0 dist/default/debug\MacroP2.X.debug.o
 _FVRCONbits 3EC1 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_INTERRUPT_InterruptManager 1156 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
-ADCC_GetSingleConversion@channel 30 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_INTERRUPT_InterruptManager 1F86 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
+__end_of___flge 2514 0 CODE 0 text35 dist/default/debug\MacroP2.X.debug.o
+ADCC_GetSingleConversion@channel 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\MacroP2.X.debug.o
-_TMR6_DefaultInterruptHandler 140A 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
+_TMR6_DefaultInterruptHandler 2D28 0 CODE 0 text39 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_BUS_COLLISION 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+___fldiv@aexp 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@bexp 49 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@sign 42 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\MacroP2.X.debug.o
 _FVRCON 3EC1 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/debug\MacroP2.X.debug.o
+___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__end_of___awdiv 26D2 0 CODE 0 text27 dist/default/debug\MacroP2.X.debug.o
+__end_of___awmod 2782 0 CODE 0 text26 dist/default/debug\MacroP2.X.debug.o
+__end_of___fladd 151A 0 CODE 0 text30 dist/default/debug\MacroP2.X.debug.o
+__end_of___fldiv 1D02 0 CODE 0 text32 dist/default/debug\MacroP2.X.debug.o
+__end_of___flmul 1968 0 CODE 0 text31 dist/default/debug\MacroP2.X.debug.o
+__end_of___flsub 2A42 0 CODE 0 text29 dist/default/debug\MacroP2.X.debug.o
+__end_of___fltol 2410 0 CODE 0 text34 dist/default/debug\MacroP2.X.debug.o
 _INLVLA 3A44 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _INLVLB 3A54 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _INLVLC 3A64 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _INLVLD 3A74 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _INLVLE 3A84 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
+_UART1_Write 2C90 0 CODE 0 text37 dist/default/debug\MacroP2.X.debug.o
+_DAC1_Initialize 2CDA 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
+___fladd@a 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fladd@b 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@a 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@b 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@a 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flmul@b 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flsub@a 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flsub@b 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _INTCON0bits 3FD2 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-UART1_SetFramingErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+UART1_SetFramingErrorHandler@interruptHandler 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_PIN_MANAGER_Initialize 1028 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
-__end_of_FVR_Initialize 1406 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
-start_initialization 1350 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+_PIN_MANAGER_Initialize 2782 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
+__end_of_FVR_Initialize 2D20 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
+start_initialization 29A6 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
 _ODCONA 3A42 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ODCONB 3A52 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ODCONC 3A62 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -475,11 +1055,11 @@ _ODCOND 3A72 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ODCONE 3A82 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _OSCFRQ 39DF 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\MacroP2.X.debug.o
-_UART1_Initialize 1156 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
+_UART1_Initialize 28DA 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADFLTRH 3EE7 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADFLTRL 3EE6 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_PWM5_LoadDutyValue 124E 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
+__end_of_PWM5_LoadDutyValue 2ABA 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
 _ADPREVH 3EEE 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADPREVL 3EED 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 ___rparam_used 1 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -495,7 +1075,9 @@ _RC4I2C 3A6B 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _RC6PPS 3A16 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _RD0I2C 3A7A 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _RD1I2C 3A7B 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_SYSTEM_Initialize 12DE 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
+__end_of_SYSTEM_Initialize 2B54 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
+__pcstackBANK0 D5 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
 _U1CON0bits 3DF2 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _T2CLKCON 3FAE 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1BRGH 3DF6 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -504,11 +1086,14 @@ _U1CON0 3DF2 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1CON1 3DF3 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1CON2 3DF4 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1FIFO 3DF7 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_ADCC_GetSingleConversion 1280 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
-isa$xinst 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-_I2C1_Status 1 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-__end_of_ADCC_Initialize 121A 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
+__end_of_ADCC_GetSingleConversion 2BB8 0 CODE 0 text40 dist/default/debug\MacroP2.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+_bufferIndex B8 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+_I2C1_Status 60 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+fputc@fp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_ADCC_Initialize 29A6 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
 _rd2RegCompleteHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@done F 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/debug\MacroP2.X.debug.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/debug\MacroP2.X.debug.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/debug\MacroP2.X.debug.o
@@ -546,8 +1131,12 @@ __Hbank15 0 0 ABS 0 bank15 dist/default/debug\MacroP2.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\MacroP2.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug\MacroP2.X.debug.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\MacroP2.X.debug.o
-__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-_PWM5_LoadDutyValue 121A 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
+__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___xxtofl@arg 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___xxtofl@exp F 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___xxtofl@val 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_sprintf 2AEE 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
+_PWM5_LoadDutyValue 2A84 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug\MacroP2.X.debug.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/debug\MacroP2.X.debug.o
 _T2HLTbits 3FAD 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -580,8 +1169,9 @@ __Ltext7 0 0 ABS 0 text7 dist/default/debug\MacroP2.X.debug.o
 __Ltext8 0 0 ABS 0 text8 dist/default/debug\MacroP2.X.debug.o
 __Ltext9 0 0 ABS 0 text9 dist/default/debug\MacroP2.X.debug.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\MacroP2.X.debug.o
+___flmul@grs 26 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _wr1RegCompleteHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_INTERRUPT_Initialize 1406 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
+_INTERRUPT_Initialize 2D24 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
 __Habs1 0 0 ABS 0 abs1 dist/default/debug\MacroP2.X.debug.o
 __Hdata 0 0 ABS 0 data dist/default/debug\MacroP2.X.debug.o
 __Hheap 0 0 HEAP 7 heap dist/default/debug\MacroP2.X.debug.o
@@ -598,45 +1188,63 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/debug\MacroP2.X.debug.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/debug\MacroP2.X.debug.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/debug\MacroP2.X.debug.o
 __Ltext 0 0 ABS 0 text dist/default/debug\MacroP2.X.debug.o
+__pnvBANK0 ED 0 BANK0 1 nvBANK0 dist/default/debug\MacroP2.X.debug.o
+___flge 2410 0 CODE 0 text35 dist/default/debug\MacroP2.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
+INTERRUPT_InterruptManager@mapeado EB 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
-PWM5_LoadDutyValue@dutyValue 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+PWM5_LoadDutyValue@dutyValue 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
 __Hirdata 0 0 CODE 0 irdata dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_BUS_ERROR 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PR2 3FAB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PR6 3F93 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__S0 140C 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__S1 3F 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__S0 2D2A 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__S1 304 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __S4 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __S5 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_abs 2AEE 0 CODE 0 text25 dist/default/debug\MacroP2.X.debug.o
+_map 2514 0 CODE 0 text28 dist/default/debug\MacroP2.X.debug.o
 __Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/debug\MacroP2.X.debug.o
+_angulo A8 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
 IVTBASEH 3FD6 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 IVTBASEL 3FD5 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 IVTBASEU 3FD7 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_uart1RxLastError 2B 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-__end_of_UART1_Initialize 11BE 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
-__pnvCOMRAM 37 0 COMRAM 1 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
+_uart1RxLastError C0 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+__end_of_UART1_Initialize 294A 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
+_buffer C1 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
 _T2RSTbits 3FAF 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_ADCC_Initialize 11BE 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
+_ADCC_Initialize 294A 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
 __pivt0x8 8 0 CODE 0 ivt0x8 dist/default/debug\MacroP2.X.debug.o
 _I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_amplitud AC 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
 _I2C1STAT1bits 3D78 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\MacroP2.X.debug.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\MacroP2.X.debug.o
+sprintf@fmt 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RESET 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_SYSTEM_Initialize 12B0 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
-_bandera 25 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-__end_of_TMR6_DefaultInterruptHandler 140C 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
+_SYSTEM_Initialize 2B22 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
+_bandera BA 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+___xxtofl 2154 0 CODE 0 text33 dist/default/debug\MacroP2.X.debug.o
+__end_of_abs 2B22 0 CODE 0 text25 dist/default/debug\MacroP2.X.debug.o
+__end_of_map 260E 0 CODE 0 text28 dist/default/debug\MacroP2.X.debug.o
+__end_of_TMR6_DefaultInterruptHandler 2D2A 0 CODE 0 text39 dist/default/debug\MacroP2.X.debug.o
 _I2C1CON0bits 3D73 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1CON1bits 3D74 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/debug\MacroP2.X.debug.o
 _I2C1ERRbits 3D76 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_ADC_0_Grados 29 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
-_TMR6_SetInterruptHandler 13F4 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
+_ADC_0_Grados BE 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+_TMR6_SetInterruptHandler 2D04 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
 __Hramtop 1000 0 RAM 0 ramtop dist/default/debug\MacroP2.X.debug.o
 _T6CLKCON 3F96 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/debug\MacroP2.X.debug.o
+UART_SendString@str 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of___xxtofl 2308 0 CODE 0 text33 dist/default/debug\MacroP2.X.debug.o
 _CCPTMRS1bits 3F5F 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__pdataBANK0 F5 0 BANK0 1 dataBANK0 dist/default/debug\MacroP2.X.debug.o
 __activetblptr 3 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/debug\MacroP2.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\MacroP2.X.debug.o
 _I2C1CLK 3D7B 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1CNT 3D6C 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1ERR 3D76 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -657,26 +1265,74 @@ __Htext19 0 0 ABS 0 text19 dist/default/debug\MacroP2.X.debug.o
 __Htext20 0 0 ABS 0 text20 dist/default/debug\MacroP2.X.debug.o
 __Htext21 0 0 ABS 0 text21 dist/default/debug\MacroP2.X.debug.o
 __Htext22 0 0 ABS 0 text22 dist/default/debug\MacroP2.X.debug.o
-_INTERRUPT_InterruptManager 10D4 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
+__Htext23 0 0 ABS 0 text23 dist/default/debug\MacroP2.X.debug.o
+__Htext24 0 0 ABS 0 text24 dist/default/debug\MacroP2.X.debug.o
+__Htext25 0 0 ABS 0 text25 dist/default/debug\MacroP2.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/default/debug\MacroP2.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/default/debug\MacroP2.X.debug.o
+__Htext28 0 0 ABS 0 text28 dist/default/debug\MacroP2.X.debug.o
+__Htext29 0 0 ABS 0 text29 dist/default/debug\MacroP2.X.debug.o
+__Htext30 0 0 ABS 0 text30 dist/default/debug\MacroP2.X.debug.o
+__Htext31 0 0 ABS 0 text31 dist/default/debug\MacroP2.X.debug.o
+__Htext32 0 0 ABS 0 text32 dist/default/debug\MacroP2.X.debug.o
+__Htext33 0 0 ABS 0 text33 dist/default/debug\MacroP2.X.debug.o
+__Htext34 0 0 ABS 0 text34 dist/default/debug\MacroP2.X.debug.o
+__Htext35 0 0 ABS 0 text35 dist/default/debug\MacroP2.X.debug.o
+__Htext36 0 0 ABS 0 text36 dist/default/debug\MacroP2.X.debug.o
+__Htext37 0 0 ABS 0 text37 dist/default/debug\MacroP2.X.debug.o
+__Htext38 0 0 ABS 0 text38 dist/default/debug\MacroP2.X.debug.o
+__Htext39 0 0 ABS 0 text39 dist/default/debug\MacroP2.X.debug.o
+__Htext40 0 0 ABS 0 text40 dist/default/debug\MacroP2.X.debug.o
+__Htext41 0 0 ABS 0 text41 dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@fmt C 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_INTERRUPT_InterruptManager 1D02 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _PIE2bits 3992 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIE3bits 3993 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIE9bits 3999 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__ptext10 130A 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
-__ptext11 1028 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
-__ptext12 13BE 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
-__ptext13 1406 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
-__ptext14 132E 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
-__ptext15 13FE 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
-__ptext16 11BE 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
-__ptext17 121A 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
-__ptext18 10D4 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
-__ptext19 1280 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
-__ptext20 140A 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
-__ptext21 124E 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
-__ptext22 0 0 CODE 0 text22 dist/default/debug\MacroP2.X.debug.o
-_TMR6_ISR 1280 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
+___fladd@signs D 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__ptext10 2C10 0 CODE 0 text10 dist/default/debug\MacroP2.X.debug.o
+__ptext11 2782 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
+__ptext12 2CC2 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
+__ptext13 2D24 0 CODE 0 text13 dist/default/debug\MacroP2.X.debug.o
+__ptext14 2C34 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
+__ptext15 2D18 0 CODE 0 text15 dist/default/debug\MacroP2.X.debug.o
+__ptext16 2CDA 0 CODE 0 text16 dist/default/debug\MacroP2.X.debug.o
+__ptext17 294A 0 CODE 0 text17 dist/default/debug\MacroP2.X.debug.o
+__ptext18 2A84 0 CODE 0 text18 dist/default/debug\MacroP2.X.debug.o
+__ptext19 1D02 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
+__ptext20 2ABA 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
+__ptext21 2A42 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
+__ptext22 1F86 0 CODE 0 text22 dist/default/debug\MacroP2.X.debug.o
+__ptext23 282E 0 CODE 0 text23 dist/default/debug\MacroP2.X.debug.o
+__ptext24 2D0E 0 CODE 0 text24 dist/default/debug\MacroP2.X.debug.o
+__ptext25 2AEE 0 CODE 0 text25 dist/default/debug\MacroP2.X.debug.o
+__ptext26 26D2 0 CODE 0 text26 dist/default/debug\MacroP2.X.debug.o
+__ptext27 260E 0 CODE 0 text27 dist/default/debug\MacroP2.X.debug.o
+__ptext28 2514 0 CODE 0 text28 dist/default/debug\MacroP2.X.debug.o
+__ptext29 29FC 0 CODE 0 text29 dist/default/debug\MacroP2.X.debug.o
+__ptext30 105A 0 CODE 0 text30 dist/default/debug\MacroP2.X.debug.o
+__ptext31 151A 0 CODE 0 text31 dist/default/debug\MacroP2.X.debug.o
+__ptext32 1968 0 CODE 0 text32 dist/default/debug\MacroP2.X.debug.o
+__ptext33 2154 0 CODE 0 text33 dist/default/debug\MacroP2.X.debug.o
+__ptext34 2308 0 CODE 0 text34 dist/default/debug\MacroP2.X.debug.o
+__ptext35 2410 0 CODE 0 text35 dist/default/debug\MacroP2.X.debug.o
+__ptext36 2BE6 0 CODE 0 text36 dist/default/debug\MacroP2.X.debug.o
+__ptext37 2C90 0 CODE 0 text37 dist/default/debug\MacroP2.X.debug.o
+__ptext38 2B54 0 CODE 0 text38 dist/default/debug\MacroP2.X.debug.o
+__ptext39 2D28 0 CODE 0 text39 dist/default/debug\MacroP2.X.debug.o
+__ptext40 2B86 0 CODE 0 text40 dist/default/debug\MacroP2.X.debug.o
+__ptext41 0 0 CODE 0 text41 dist/default/debug\MacroP2.X.debug.o
+_TMR6_ISR 2B54 0 CODE 0 text38 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_PIN_MANAGER_Initialize 10D4 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
+__end_of_PIN_MANAGER_Initialize 282E 0 CODE 0 text11 dist/default/debug\MacroP2.X.debug.o
+___awdiv 260E 0 CODE 0 text27 dist/default/debug\MacroP2.X.debug.o
+___awmod 26D2 0 CODE 0 text26 dist/default/debug\MacroP2.X.debug.o
+___fladd 105A 0 CODE 0 text30 dist/default/debug\MacroP2.X.debug.o
+___fldiv 1968 0 CODE 0 text32 dist/default/debug\MacroP2.X.debug.o
+___flmul 151A 0 CODE 0 text31 dist/default/debug\MacroP2.X.debug.o
+___flsub 29FC 0 CODE 0 text29 dist/default/debug\MacroP2.X.debug.o
+___fltol 2308 0 CODE 0 text34 dist/default/debug\MacroP2.X.debug.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/debug\MacroP2.X.debug.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/debug\MacroP2.X.debug.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/debug\MacroP2.X.debug.o
@@ -687,23 +1343,28 @@ __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\MacroP2.X.debug.o
 __Lbigram 0 0 ABS 0 bigram dist/default/debug\MacroP2.X.debug.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-UART1_SetErrorHandler@interruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+UART1_SetErrorHandler@interruptHandler 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_TX_ACK 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lcomram 0 0 ABS 0 comram dist/default/debug\MacroP2.X.debug.o
 __Lconfig 0 0 CONFIG 4 config dist/default/debug\MacroP2.X.debug.o
-__end_of_TMR6_ISR 12B0 0 CODE 0 text19 dist/default/debug\MacroP2.X.debug.o
-_LATBbits 3FBB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-_TMR6_InterruptHandler 37 0 COMRAM 1 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_TMR6_ISR 2B86 0 CODE 0 text38 dist/default/debug\MacroP2.X.debug.o
+___fldiv@grs 45 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@rem 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_TMR6_InterruptHandler ED 0 BANK0 1 nvBANK0 dist/default/debug\MacroP2.X.debug.o
 _I2C1SCLPPS 3AE1 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _T6CONbits 3F94 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1SDAPPS 3AE2 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\MacroP2.X.debug.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug\MacroP2.X.debug.o
-isa$std 1 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-stackhi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+map@in_max 53 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+map@in_min 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fldiv@new_exp 43 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_UART1_Write 2CAA 0 CODE 0 text37 dist/default/debug\MacroP2.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+stacklo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 _OSCCON1 39D9 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _OSCCON3 39DB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _OSCTUNE 39DE 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -713,45 +1374,75 @@ _ADCON0bits 3EF8 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADCON1bits 3EF9 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADCON2bits 3EFA 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADCON3bits 3EFB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+___fladd@grs 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_maxSample A4 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+__pbssBIGRAM 104 0 BIGRAM 1 bssBIGRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lspace_0 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lspace_1 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lspace_2 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lspace_4 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
+__pbssCOMRAM 5F 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
+___flge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___flge@ff2 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _rd1RegCompleteHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIR2bits 39A2 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIR3bits 39A3 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIR4bits 39A4 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _PIR9bits 39A9 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@convarg 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
-_UART1_SetFramingErrorHandler 13E0 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
-_UART1_SetOverrunErrorHandler 13D6 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
-end_of_initialization 1368 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+___fltol@exp1 E2 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
+_UART1_SetFramingErrorHandler 2CF0 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
+_UART1_SetOverrunErrorHandler 2CE6 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
+end_of_initialization 29F6 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\MacroP2.X.debug.o
+map@out_max 5B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+map@out_min 57 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+fputc@c 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___fladd 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___fldiv 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___flmul 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___flsub 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+?___fltol D9 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
+vfprintf@fmt 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\MacroP2.X.debug.o
-_UART1_FramingErrorHandler 3D 0 COMRAM 1 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
-_UART1_OverrunErrorHandler 3B 0 COMRAM 1 nvCOMRAM dist/default/debug\MacroP2.X.debug.o
-__end_of_TMR6_Initialize 130A 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+_sampleBuffer 104 0 BIGRAM 1 bssBIGRAM dist/default/debug\MacroP2.X.debug.o
+_UART1_FramingErrorHandler F3 0 BANK0 1 nvBANK0 dist/default/debug\MacroP2.X.debug.o
+_UART1_OverrunErrorHandler F1 0 BANK0 1 nvBANK0 dist/default/debug\MacroP2.X.debug.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_TMR6_Initialize 2BE6 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_RX 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_TX 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lramtop 1000 0 RAM 0 ramtop dist/default/debug\MacroP2.X.debug.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/debug\MacroP2.X.debug.o
-__pcinit 1350 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
-__ptext0 138C 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
-__ptext1 12B0 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
-__ptext2 1156 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
-__ptext3 13D6 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
-__ptext4 13E0 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
-__ptext5 13EA 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
-__ptext6 12DE 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
-__ptext7 13F4 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
-__ptext8 136E 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
-__ptext9 13A6 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
+__pcinit 29A6 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@ap D 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@cp 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@fp B 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__ptext0 2C74 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
+__ptext1 2B22 0 CODE 0 text1 dist/default/debug\MacroP2.X.debug.o
+__ptext2 28DA 0 CODE 0 text2 dist/default/debug\MacroP2.X.debug.o
+__ptext3 2CE6 0 CODE 0 text3 dist/default/debug\MacroP2.X.debug.o
+__ptext4 2CF0 0 CODE 0 text4 dist/default/debug\MacroP2.X.debug.o
+__ptext5 2CFA 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
+__ptext6 2BB8 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
+__ptext7 2D04 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
+__ptext8 2C56 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
+__ptext9 2CAA 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
 _I2C1PIEbits 3D7A 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug\MacroP2.X.debug.o
+vfprintf@ap 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+vfprintf@fp 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1PIRbits 3D79 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+vfprintf@cfmt 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Ltext10 0 0 ABS 0 text10 dist/default/debug\MacroP2.X.debug.o
 __Ltext11 0 0 ABS 0 text11 dist/default/debug\MacroP2.X.debug.o
 __Ltext12 0 0 ABS 0 text12 dist/default/debug\MacroP2.X.debug.o
@@ -765,40 +1456,75 @@ __Ltext19 0 0 ABS 0 text19 dist/default/debug\MacroP2.X.debug.o
 __Ltext20 0 0 ABS 0 text20 dist/default/debug\MacroP2.X.debug.o
 __Ltext21 0 0 ABS 0 text21 dist/default/debug\MacroP2.X.debug.o
 __Ltext22 0 0 ABS 0 text22 dist/default/debug\MacroP2.X.debug.o
-__end_of_PWM5_Initialize 13BE 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
-__ramtop 1000 0 RAM 0 ramtop C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\MacroP2.X.debug.o
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\MacroP2.X.debug.o
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\MacroP2.X.debug.o
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\MacroP2.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\MacroP2.X.debug.o
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\MacroP2.X.debug.o
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\MacroP2.X.debug.o
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\MacroP2.X.debug.o
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\MacroP2.X.debug.o
+__Ltext32 0 0 ABS 0 text32 dist/default/debug\MacroP2.X.debug.o
+__Ltext33 0 0 ABS 0 text33 dist/default/debug\MacroP2.X.debug.o
+__Ltext34 0 0 ABS 0 text34 dist/default/debug\MacroP2.X.debug.o
+__Ltext35 0 0 ABS 0 text35 dist/default/debug\MacroP2.X.debug.o
+__Ltext36 0 0 ABS 0 text36 dist/default/debug\MacroP2.X.debug.o
+__Ltext37 0 0 ABS 0 text37 dist/default/debug\MacroP2.X.debug.o
+__Ltext38 0 0 ABS 0 text38 dist/default/debug\MacroP2.X.debug.o
+__Ltext39 0 0 ABS 0 text39 dist/default/debug\MacroP2.X.debug.o
+__Ltext40 0 0 ABS 0 text40 dist/default/debug\MacroP2.X.debug.o
+__Ltext41 0 0 ABS 0 text41 dist/default/debug\MacroP2.X.debug.o
+__end_of_PWM5_Initialize 2CC2 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+_sprintf 2ABA 0 CODE 0 text20 dist/default/debug\MacroP2.X.debug.o
+_vfprintf 2A42 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug\MacroP2.X.debug.o
+?___xxtofl 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\MacroP2.X.debug.o
+_adc_value B0 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+sprintf@ap 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\MacroP2.X.debug.o
 _UART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+___fladd@aexp E 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fladd@bexp F 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+___fltol@sign1 E1 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
 __psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\MacroP2.X.debug.o
+__end_of_vfprintf 2A84 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
 _SLRCONA 3A43 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _SLRCONB 3A53 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _SLRCONC 3A63 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _SLRCOND 3A73 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _SLRCONE 3A83 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-___heap_hi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___heap_lo 0 0 ABS 0 - C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___fltol@f1 D9 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
 ___param_bank 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcAsc1g.\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\mesas\AppData\Local\Temp\xcCsn8s.2\driver_tmp_14.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\MacroP2.X.debug.o
-__end_of__initialization 1368 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+__end_of__initialization 29F6 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/debug\MacroP2.X.debug.o
 _ADSTATbits 3EFC 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _UART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__pidataBANK0 2D20 0 CODE 0 idataBANK0 dist/default/debug\MacroP2.X.debug.o
 _UART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/debug\MacroP2.X.debug.o
 __end_of_i2c1_fsmStateTable 1027 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
-_TMR6_Initialize 12DE 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
-__pcstackCOMRAM 2C 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_TMR6_Initialize 2BB8 0 CODE 0 text6 dist/default/debug\MacroP2.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_I2C1_Initialize 1350 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
-TMR6_SetInterruptHandler@InterruptHandler 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
-_PWM5_Initialize 13A6 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
-__end_of_main 13A6 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
-__end_of_UART1_SetErrorHandler 13F4 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
+__end_of_I2C1_Initialize 2C56 0 CODE 0 text14 dist/default/debug\MacroP2.X.debug.o
+TMR6_SetInterruptHandler@InterruptHandler 100 0 BANK1 1 cstackBANK1 dist/default/debug\MacroP2.X.debug.o
+_PWM5_Initialize 2CAA 0 CODE 0 text9 dist/default/debug\MacroP2.X.debug.o
+vfpfcnvrt@c 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+sprintf@f 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+sprintf@s 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+putch@txData 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_main 2C90 0 CODE 0 text0 dist/default/debug\MacroP2.X.debug.o
+__end_of_UART1_SetErrorHandler 2D04 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
 _ADACT 3EFE 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADCAP 3EF5 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADCLK 3EFF 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -806,6 +1532,8 @@ _ADCNT 3EEB 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADPCH 3EF1 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADREF 3EFD 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _ADRPT 3EEC 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__end_of_fputc 28DA 0 CODE 0 text23 dist/default/debug\MacroP2.X.debug.o
+?_sprintf 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
 _OSCEN 39DD 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _T2CON 3FAC 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _T2HLT 3FAD 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
@@ -829,6 +1557,7 @@ _U1P3L 3DF0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1RXB 3DE8 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1TXB 3DEA 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _U1UIR 3DF8 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+__end_of_putch 2D18 0 CODE 0 text24 dist/default/debug\MacroP2.X.debug.o
 __HRAM 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hbss 0 0 RAM 1 bss dist/default/debug\MacroP2.X.debug.o
 __Hram 0 0 ABS 0 ram dist/default/debug\MacroP2.X.debug.o
@@ -838,21 +1567,30 @@ __Lbss 0 0 RAM 1 bss dist/default/debug\MacroP2.X.debug.o
 __Lram 0 0 ABS 0 ram dist/default/debug\MacroP2.X.debug.o
 __Lsfr 0 0 ABS 0 sfr dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
-__end_of_OSCILLATOR_Initialize 13D6 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
-__initialization 1350 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
-_ADCC_GetSingleConversion 124E 0 CODE 0 text21 dist/default/debug\MacroP2.X.debug.o
+_flags 5F 0 COMRAM 1 bssCOMRAM dist/default/debug\MacroP2.X.debug.o
+_fputc 282E 0 CODE 0 text23 dist/default/debug\MacroP2.X.debug.o
+_putch 2D0E 0 CODE 0 text24 dist/default/debug\MacroP2.X.debug.o
+_width B4 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/debug\MacroP2.X.debug.o
+__end_of_OSCILLATOR_Initialize 2CDA 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
+__initialization 29A6 0 CODE 0 cinit dist/default/debug\MacroP2.X.debug.o
+___xxtofl@sign E 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+_ADCC_GetSingleConversion 2B86 0 CODE 0 text40 dist/default/debug\MacroP2.X.debug.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/debug\MacroP2.X.debug.o
 _i2c1_fsmStateTable 1001 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
-_UART1_SetErrorHandler 13EA 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
+_UART1_SetErrorHandler 2CFA 0 CODE 0 text5 dist/default/debug\MacroP2.X.debug.o
 _T2CONbits 3FAC 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 _I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
+_map$3482 D5 0 BANK0 1 cstackBANK0 dist/default/debug\MacroP2.X.debug.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/debug\MacroP2.X.debug.o
-__Hsmallconst 1028 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
-__end_of_TMR6_SetInterruptHandler 13FE 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
+__Hsmallconst 105A 0 SMALLCONST 0 smallconst dist/default/debug\MacroP2.X.debug.o
+__end_of_TMR6_SetInterruptHandler 2D0E 0 CODE 0 text7 dist/default/debug\MacroP2.X.debug.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/debug\MacroP2.X.debug.o
 _U1ERRIRbits 3DF9 0 ABS 0 - dist/default/debug\MacroP2.X.debug.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\MacroP2.X.debug.o
-_OSCILLATOR_Initialize 13BE 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
-__end_of_TMR2_Initialize 138C 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
+_OSCILLATOR_Initialize 2CC2 0 CODE 0 text12 dist/default/debug\MacroP2.X.debug.o
+UART1_Write@txData 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\MacroP2.X.debug.o
+__end_of_TMR2_Initialize 2C74 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -878,10 +1616,13 @@ __end_of_TMR2_Initialize 138C 0 CODE 0 text8 dist/default/debug\MacroP2.X.debug.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 ivt0x8 0 8 8 16 1
-text11 0 1028 1028 3E4 1
+text30 0 105A 105A 1CD0 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK1 1 100 100 4 1
 reset_vec 0 0 0 4 1
-smallconst 0 1000 1000 28 1
-bssCOMRAM 1 1 1 3E 1
+bssBANK0 1 60 60 99 1
+smallconst 0 1000 1000 5A 1
+bssBIGRAM 1 104 104 200 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

@@ -57,8 +57,9 @@ void SYSTEM_Initialize(void)
     FVR_Initialize();
     TMR6_Initialize();
     ADCC_Initialize();
-    TMR2_Initialize();
+    DAC1_Initialize();
     PWM5_Initialize();
+    TMR2_Initialize();
     UART1_Initialize();
 }
 

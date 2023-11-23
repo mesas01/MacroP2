@@ -43,9 +43,31 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "FUNCIONES.h"
+#include "math.h"
 /*
                          Main application
  */
+
+// Función para enviar cadenas a través de UART
+/*void UART_SendString(const char* str){
+    while (*str){
+        UART1_Write(*str);
+        str++;
+    }
+}*/
+
+
+/*void sendToNextion(const char* message) {
+    // Send the main message
+    UART_SendString(message);
+
+    // Send the 0xFF 0xFF 0xFF sequence to signify end of message
+    UART1_Write(0xFF);
+    UART1_Write(0xFF);
+    UART1_Write(0xFF);
+}*/
+
+
 void main(void)
 {
     // Initialize the device
@@ -60,8 +82,13 @@ void main(void)
     while (1)
     {      
         PWM5_LoadDutyValue(249);//pwm al 50% de ciclo util 8KHz
+        //UART_SendString("myLed.pic=0\xFF\xFF\xFF");
         
-        
+        /*sendToNextion("myLed.pic=1");
+        __delay_ms(1000);
+        //UART_SendString("myLed.pic=1\xFF\xFF\xFF");
+        sendToNextion("myLed.pic=0");
+        __delay_ms(1000);*/
     }
 }
 /**

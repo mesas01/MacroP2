@@ -57,8 +57,9 @@
 #include "tmr6.h"
 #include "tmr2.h"
 #include "pwm5.h"
-#include "fvr.h"
 #include "adcc.h"
+#include "fvr.h"
+#include "dac1.h"
 #include "uart1.h"
 
 

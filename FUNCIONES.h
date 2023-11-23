@@ -1,41 +1,28 @@
-/* Microchip Technology Inc. and its subsidiaries.  You may use this software 
- * and any derivatives exclusively with Microchip products. 
- * 
- * THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS".  NO WARRANTIES, WHETHER 
- * EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED 
- * WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A 
- * PARTICULAR PURPOSE, OR ITS INTERACTION WITH MICROCHIP PRODUCTS, COMBINATION 
- * WITH ANY OTHER PRODUCTS, OR USE IN ANY APPLICATION. 
- *
- * IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
- * INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND 
- * WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS 
- * BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE.  TO THE 
- * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS 
- * IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF 
- * ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *
- * MICROCHIP PROVIDES THIS SOFTWARE CONDITIONALLY UPON YOUR ACCEPTANCE OF THESE 
- * TERMS. 
- */
+/**
+  Archivo de encabezado: funciones.h
 
-/* 
- * File:   
- * Author: 
- * Comments:
- * Revision history: 
- */
+  Descripción:
+    Este archivo es un archivo de encabezado que contiene las declaraciones de funciones y estructuras 
+    que se utilizarán en el archivo funciones.c. Define la interfaz pública para las funciones y estructuras 
+    relacionadas con el filtrado de señales.
+*/
 
-// This is a guard condition so that contents of this file are not included
-// more than once.  
-#ifndef XC_HEADER_TEMPLATE_H
-#define	XC_HEADER_TEMPLATE_H
+// Directiva de preprocesador para evitar la inclusión múltiple del archivo.
+#ifndef FUNCIONES_H
+#define FUNCIONES_H
 
-#include <xc.h> // include processor files - each processor file is guarded.  
+// Inclusión de bibliotecas necesarias.
+#include <stdint.h>
 
-uint16_t leerADC(void);
+// Definición del orden del filtro FIR.
+#define N 16
+
+// Declaración de un array externo. Este array se define en otro archivo (probablemente funciones.c) 
+// y se utiliza para almacenar las últimas entradas del filtro FIR.
+extern volatile int x[N];
 
 
+// Prototipos de funciones.
+long filtrarFIR1(int in);  // Función de filtro FIR.
 
-#endif	/* XC_HEADER_TEMPLATE_H */
-
+#endif // FUNCIONES_H

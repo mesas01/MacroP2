@@ -1,29 +1,37 @@
-/*
- * File:   FUNCIONES.c
- * Author: mesas
- *
- * Created on November 4, 2023, 12:29 PM
- */
-
-
+// Inclusión del archivo de encabezado correspondiente.
 #include "FUNCIONES.h"
 
-/*uint16_t leerADC(){
-    uint16_t valorDelADC = 0;
-    // 1. Lectura del valor del ADC desde el canal/pin específico (RA6)
-    valorDelADC = ADCC_GetSingleConversion(ADC_Amplif);
+//----------------------------COEFICIENTES FIR A 50HZ-------------------------------------
+#define BL 16
+const char B[BL] = {
+-2648,  -2512,  -1152,   1424,   4824,   8400,  11376,  13064,  13064,
+    11376,   8400,   4824,   1424,  -1152,  -2512,  -2648
+};
 
-    // 2. Conversión del valor crudo del ADC a un valor de voltaje.
-    // La escala máxima es de 10V (asumido por el factor 10.0) y el ADC es de 12 bits (4095)
-    voltage = (float)(adc_value * 10.00f) / 4095.0f; 
-    
-    // 3. Conversión del valor de voltaje a milivoltios para manejar valores enteros.
-    uint16_t temp = (uint16_t)(voltage * 1000 + 0.5); 
-  
+//----------------------------COEFICIENTES FIR A 25HZ-------------------------------------
+//const char B[BL] = {
+//      1656,   2444,   3244,   4008,   4692,   5244,   5636,   5840,   5840,
+//     5636,   5244,   4692,   4008,   3244,   2444,   1656
+//};
 
-    // 4. Descomposición del valor entero en dígitos individuales y almacenamiento en el array 'digits'
-    for (int i = 0; i < 4; i++){
-        digits[i] = temp % 10;  // Extrae el dígito más a la derecha
-        temp /= 10;             // Desplaza los dígitos a la derecha
+
+// Variables volátiles para pasar datos entre funciones.
+volatile int x[BL];  // Array para almacenar las últimas entradas del filtro FIR.
+volatile int k=0;    // Índice para gestionar la posición actual en el array x.
+
+
+//funcion filtro fir
+long filtrarFIR1(int in){
+    // Función de filtro FIR.
+    int i = 1;
+    x[k] = (int)in;  // Almacenar la entrada actual en el array x.
+    long y = 0;      // Inicializar la salida.
+
+    // Bucle para calcular la salida del filtro FIR.
+    for (i = 1; i <= BL; i++) {
+        y += (long)B[i - 1] * (long)x[(i + k) % BL]; // Multiplicación y acumulación para calcular la salida.
     }
-}*/
+
+    k = (k + 1) % BL;  // Actualizar el índice k para la siguiente entrada.
+    return y>>8 ;      // Devolver la salida del filtro. El desplazamiento a la derecha es para normalizar el resultado.
+}

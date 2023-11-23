@@ -1,4 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"376 mcc_generated_files/uart1.h
+[; ;mcc_generated_files/uart1.h: 376: void UART1_Write(uint8_t txData);
+[v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
 "47664 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 47664:     struct {
 [s S2162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -41,28 +44,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "828 mcc_generated_files/tmr6.h
 [; ;mcc_generated_files/tmr6.h: 828: void TMR6_ISR(void);
 [v _TMR6_ISR `(v ~T0 @X0 0 ef ]
-"70 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 70:             ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
-[c E16787 0 1 4 5 6 7 59 60 61 62 63 .. ]
-[n E16787 . channel_ANA0 channel_ANA1 channel_ANA4 channel_ANA5 ADC_Amplif channel_ANA7 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"98 mcc_generated_files/interrupt_manager.c
+[; ;mcc_generated_files/interrupt_manager.c: 98:         adc_value = ADCC_GetSingleConversion(ADC_Amplif);
+[c E16785 0 1 4 5 6 7 59 60 61 62 63 .. ]
+[n E16785 . channel_ANA0 channel_ANA1 channel_ANA4 channel_ANA5 ADC_Amplif channel_ANA7 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "258 mcc_generated_files/adcc.h
 [; ;mcc_generated_files/adcc.h: 258: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E16787 ]
-"46710 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 46710:     struct {
-[s S2130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2130 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"46720
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 46720:     struct {
-[s S2131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2131 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"46709
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 46709: typedef union {
-[u S2129 `S2130 1 `S2131 1 ]
-[n S2129 . . . ]
-"46731
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 46731: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
-[v _LATBbits `VS2129 ~T0 @X0 0 e@16315 ]
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E16785 ]
+"121 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "250 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2322,112 +2313,237 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49098
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k42.h: 49098: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
-"52 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 52: uint16_t ADC_0_Grados = 0;
+"53 mcc_generated_files/interrupt_manager.c
+[; ;mcc_generated_files/interrupt_manager.c: 53: uint16_t ADC_0_Grados = 0;
 [v _ADC_0_Grados `us ~T0 @X0 1 e ]
 [i _ADC_0_Grados
 -> -> 0 `i `us
 ]
-"53
-[; ;mcc_generated_files/interrupt_manager.c: 53: uint16_t ADC_90_Grados = 0;
+"54
+[; ;mcc_generated_files/interrupt_manager.c: 54: uint16_t ADC_90_Grados = 0;
 [v _ADC_90_Grados `us ~T0 @X0 1 e ]
 [i _ADC_90_Grados
 -> -> 0 `i `us
 ]
-"54
-[; ;mcc_generated_files/interrupt_manager.c: 54: int bandera = 0;
+"55
+[; ;mcc_generated_files/interrupt_manager.c: 55: float adc_value = 0.000;
+[v _adc_value `f ~T0 @X0 1 e ]
+[i _adc_value
+-> .0.000 `f
+]
+"56
+[; ;mcc_generated_files/interrupt_manager.c: 56: float amplitud = 0;
+[v _amplitud `f ~T0 @X0 1 e ]
+[i _amplitud
+-> -> 0 `i `f
+]
+"57
+[; ;mcc_generated_files/interrupt_manager.c: 57: float angulo = 0;
+[v _angulo `f ~T0 @X0 1 e ]
+[i _angulo
+-> -> 0 `i `f
+]
+"58
+[; ;mcc_generated_files/interrupt_manager.c: 58: int bandera = 0;
 [v _bandera `i ~T0 @X0 1 e ]
 [i _bandera
 -> 0 `i
 ]
-"56
-[; ;mcc_generated_files/interrupt_manager.c: 56: void INTERRUPT_Initialize (void)
+"59
+[; ;mcc_generated_files/interrupt_manager.c: 59: float puntoDeQuiebre = 0.584;
+[v _puntoDeQuiebre `f ~T0 @X0 1 e ]
+[i _puntoDeQuiebre
+-> .0.584 `f
+]
+"60
+[; ;mcc_generated_files/interrupt_manager.c: 60: char buffer[20];
+[v _buffer `uc ~T0 @X0 -> 20 `i e ]
+"66
+[; ;mcc_generated_files/interrupt_manager.c: 66: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+[v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
+{
+[e :U _map ]
+[v _x `f ~T0 @X0 1 r1 ]
+[v _in_min `f ~T0 @X0 1 r2 ]
+[v _in_max `f ~T0 @X0 1 r3 ]
+[v _out_min `f ~T0 @X0 1 r4 ]
+[v _out_max `f ~T0 @X0 1 r5 ]
+[f ]
+"67
+[; ;mcc_generated_files/interrupt_manager.c: 67:     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 2272  ]
+"68
+[; ;mcc_generated_files/interrupt_manager.c: 68: }
+[e :UE 2272 ]
+}
+"70
+[; ;mcc_generated_files/interrupt_manager.c: 70: float sampleBuffer[128];
+[v _sampleBuffer `f ~T0 @X0 -> 128 `i e ]
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71: uint16_t bufferIndex = 0;
+[v _bufferIndex `us ~T0 @X0 1 e ]
+[i _bufferIndex
+-> -> 0 `i `us
+]
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72: float maxSample = 0.0f;
+[v _maxSample `f ~T0 @X0 1 e ]
+[i _maxSample
+-> .0.0 `f
+]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76: void UART_SendString(const char* str){
+[v _UART_SendString `(v ~T0 @X0 1 ef1`*Cuc ]
+{
+[e :U _UART_SendString ]
+[v _str `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:     while (*str){
+[e $U 2274  ]
+[e :U 2275 ]
+{
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78:         UART1_Write(*str);
+[e ( _UART1_Write (1 -> *U _str `uc ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:         str++;
+[e ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     }
+}
+[e :U 2274 ]
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:     while (*str){
+[e $ != -> *U _str `i -> 0 `i 2275  ]
+[e :U 2276 ]
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81: }
+[e :UE 2273 ]
+}
+"84
+[; ;mcc_generated_files/interrupt_manager.c: 84: void INTERRUPT_Initialize (void)
 [v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
-"57
-[; ;mcc_generated_files/interrupt_manager.c: 57: {
+"85
+[; ;mcc_generated_files/interrupt_manager.c: 85: {
 {
 [e :U _INTERRUPT_Initialize ]
 [f ]
-"59
-[; ;mcc_generated_files/interrupt_manager.c: 59:     INTCON0bits.IPEN = 0;
+"87
+[; ;mcc_generated_files/interrupt_manager.c: 87:     INTCON0bits.IPEN = 0;
 [e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
-"60
-[; ;mcc_generated_files/interrupt_manager.c: 60: }
-[e :UE 2272 ]
+"88
+[; ;mcc_generated_files/interrupt_manager.c: 88: }
+[e :UE 2277 ]
 }
 [v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"62
-[; ;mcc_generated_files/interrupt_manager.c: 62: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+"90
+[; ;mcc_generated_files/interrupt_manager.c: 90: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 [v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"63
-[; ;mcc_generated_files/interrupt_manager.c: 63: {
+"91
+[; ;mcc_generated_files/interrupt_manager.c: 91: {
 {
 [e :U _INTERRUPT_InterruptManager ]
 [f ]
-"65
-[; ;mcc_generated_files/interrupt_manager.c: 65:     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
-[e $ ! && == -> . . _PIE9bits 0 0 `i -> 1 `i == -> . . _PIR9bits 0 0 `i -> 1 `i 2274  ]
-"66
-[; ;mcc_generated_files/interrupt_manager.c: 66:     {
+"93
+[; ;mcc_generated_files/interrupt_manager.c: 93:     if(PIE9bits.TMR6IE == 1 && PIR9bits.TMR6IF == 1)
+[e $ ! && == -> . . _PIE9bits 0 0 `i -> 1 `i == -> . . _PIR9bits 0 0 `i -> 1 `i 2279  ]
+"94
+[; ;mcc_generated_files/interrupt_manager.c: 94:     {
 {
-"67
-[; ;mcc_generated_files/interrupt_manager.c: 67:         TMR6_ISR();
+"95
+[; ;mcc_generated_files/interrupt_manager.c: 95:         TMR6_ISR();
 [e ( _TMR6_ISR ..  ]
-"69
-[; ;mcc_generated_files/interrupt_manager.c: 69:         if(bandera == 0){
-[e $ ! == _bandera -> 0 `i 2275  ]
+"98
+[; ;mcc_generated_files/interrupt_manager.c: 98:         adc_value = ADCC_GetSingleConversion(ADC_Amplif);
+[e = _adc_value -> ( _ADCC_GetSingleConversion (1 . `E16785 4 `f ]
+"99
+[; ;mcc_generated_files/interrupt_manager.c: 99:         amplitud = (float)(adc_value * 2.048f) / 4095.0f;
+[e = _amplitud / * _adc_value -> .2.048 `f -> .4095.0 `f ]
+"100
+[; ;mcc_generated_files/interrupt_manager.c: 100:         sampleBuffer[bufferIndex++] = amplitud;
+[e = *U + &U _sampleBuffer * -> ++ _bufferIndex -> -> 1 `i `us `ux -> -> # *U &U _sampleBuffer `ui `ux _amplitud ]
+"103
+[; ;mcc_generated_files/interrupt_manager.c: 103:         if (amplitud > maxSample) {
+[e $ ! > _amplitud _maxSample 2280  ]
 {
-"70
-[; ;mcc_generated_files/interrupt_manager.c: 70:             ADC_0_Grados = ADCC_GetSingleConversion(ADC_Amplif);
-[e = _ADC_0_Grados ( _ADCC_GetSingleConversion (1 . `E16787 4 ]
-"71
-[; ;mcc_generated_files/interrupt_manager.c: 71:             bandera = 1;
-[e = _bandera -> 1 `i ]
-"72
-[; ;mcc_generated_files/interrupt_manager.c: 72:             do { LATBbits.LATB3 = 1; } while(0);
-[e :U 2278 ]
+"104
+[; ;mcc_generated_files/interrupt_manager.c: 104:             maxSample = amplitud;
+[e = _maxSample _amplitud ]
+"105
+[; ;mcc_generated_files/interrupt_manager.c: 105:         }
+}
+[e :U 2280 ]
+"108
+[; ;mcc_generated_files/interrupt_manager.c: 108:         if (bufferIndex >= 128) {
+[e $ ! >= -> _bufferIndex `ui -> -> 128 `i `ui 2281  ]
 {
-[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 2277 ]
-"73
-[; ;mcc_generated_files/interrupt_manager.c: 73:         }else{
-}
-[e $U 2279  ]
-[e :U 2275 ]
+"109
+[; ;mcc_generated_files/interrupt_manager.c: 109:             bufferIndex = 0;
+[e = _bufferIndex -> -> 0 `i `us ]
+"112
+[; ;mcc_generated_files/interrupt_manager.c: 112:             if(maxSample >= puntoDeQuiebre) {
+[e $ ! >= _maxSample _puntoDeQuiebre 2282  ]
 {
-"74
-[; ;mcc_generated_files/interrupt_manager.c: 74:             ADC_90_Grados = ADCC_GetSingleConversion(ADC_Amplif);
-[e = _ADC_90_Grados ( _ADCC_GetSingleConversion (1 . `E16787 4 ]
-"75
-[; ;mcc_generated_files/interrupt_manager.c: 75:             bandera = 0;
-[e = _bandera -> 0 `i ]
-"76
-[; ;mcc_generated_files/interrupt_manager.c: 76:             do { LATBbits.LATB3 = 0; } while(0);
-[e :U 2282 ]
-{
-[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
-}
-[e :U 2281 ]
-"77
-[; ;mcc_generated_files/interrupt_manager.c: 77:         }
-}
-[e :U 2279 ]
-"79
-[; ;mcc_generated_files/interrupt_manager.c: 79:     }
+"113
+[; ;mcc_generated_files/interrupt_manager.c: 113:                 int mapeado = (int)map(maxSample, 0.584, 0.661, 0, 100);
+[v _mapeado `i ~T0 @X0 1 a ]
+[e = _mapeado -> ( _map (4 , , , , _maxSample -> .0.584 `f -> .0.661 `f -> -> 0 `i `f -> -> 100 `i `f `i ]
+"116
+[; ;mcc_generated_files/interrupt_manager.c: 116:                 sprintf(buffer, "myLed.pic=1\xFF\xFF\xFF");
+[e ( _sprintf (1 , &U _buffer :s 1C ]
+"117
+[; ;mcc_generated_files/interrupt_manager.c: 117:                 UART_SendString(buffer);
+[e ( _UART_SendString (1 -> &U _buffer `*Cuc ]
+"120
+[; ;mcc_generated_files/interrupt_manager.c: 120:                 sprintf(buffer, "PA0.nivel.val=%d\xFF\xFF\xFF", mapeado);
+[e ( _sprintf (1 , (. , &U _buffer :s 2C _mapeado ]
+"121
+[; ;mcc_generated_files/interrupt_manager.c: 121:                 UART_SendString(buffer);
+[e ( _UART_SendString (1 -> &U _buffer `*Cuc ]
+"122
+[; ;mcc_generated_files/interrupt_manager.c: 122:             } else {
 }
 [e $U 2283  ]
-"80
-[; ;mcc_generated_files/interrupt_manager.c: 80:     else
-[e :U 2274 ]
-"81
-[; ;mcc_generated_files/interrupt_manager.c: 81:     {
+[e :U 2282 ]
 {
-"83
-[; ;mcc_generated_files/interrupt_manager.c: 83:     }
+"124
+[; ;mcc_generated_files/interrupt_manager.c: 124:                 sprintf(buffer, "myLed.pic=0\xFF\xFF\xFF");
+[e ( _sprintf (1 , &U _buffer :s 3C ]
+"125
+[; ;mcc_generated_files/interrupt_manager.c: 125:                 UART_SendString(buffer);
+[e ( _UART_SendString (1 -> &U _buffer `*Cuc ]
+"126
+[; ;mcc_generated_files/interrupt_manager.c: 126:             }
 }
 [e :U 2283 ]
-"84
-[; ;mcc_generated_files/interrupt_manager.c: 84: }
-[e :UE 2273 ]
+"129
+[; ;mcc_generated_files/interrupt_manager.c: 129:             maxSample = 0.0f;
+[e = _maxSample -> .0.0 `f ]
+"130
+[; ;mcc_generated_files/interrupt_manager.c: 130:         }
 }
+[e :U 2281 ]
+"131
+[; ;mcc_generated_files/interrupt_manager.c: 131:     }
+}
+[e $U 2284  ]
+"132
+[; ;mcc_generated_files/interrupt_manager.c: 132:     else
+[e :U 2279 ]
+"133
+[; ;mcc_generated_files/interrupt_manager.c: 133:     {
+{
+"135
+[; ;mcc_generated_files/interrupt_manager.c: 135:     }
+}
+[e :U 2284 ]
+"136
+[; ;mcc_generated_files/interrupt_manager.c: 136: }
+[e :UE 2278 ]
+}
+[p f _sprintf 8388736 ]
+[a 2C 80 65 48 46 110 105 118 101 108 46 118 97 108 61 37 100 18446744073709551615 18446744073709551615 18446744073709551615 0 ]
+[a 1C 109 121 76 101 100 46 112 105 99 61 49 18446744073709551615 18446744073709551615 18446744073709551615 0 ]
+[a 3C 109 121 76 101 100 46 112 105 99 61 48 18446744073709551615 18446744073709551615 18446744073709551615 0 ]

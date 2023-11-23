@@ -1,0 +1,80 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"6 FUNCIONES.c
+[; ;FUNCIONES.c: 6: const char B[16] = {
+[v _B `Cuc ~T0 @X0 -> 16 `i e ]
+[i _B
+:U ..
+-> -U -> 2648 `i `uc
+-> -U -> 2512 `i `uc
+-> -U -> 1152 `i `uc
+-> -> 1424 `i `uc
+-> -> 4824 `i `uc
+-> -> 8400 `i `uc
+-> -> 11376 `i `uc
+-> -> 13064 `i `uc
+-> -> 13064 `i `uc
+-> -> 11376 `i `uc
+-> -> 8400 `i `uc
+-> -> 4824 `i `uc
+-> -> 1424 `i `uc
+-> -U -> 1152 `i `uc
+-> -U -> 2512 `i `uc
+-> -U -> 2648 `i `uc
+..
+]
+"19
+[; ;FUNCIONES.c: 19: volatile int x[16];
+[v _x `Vi ~T0 @X0 -> 16 `i e ]
+"20
+[; ;FUNCIONES.c: 20: volatile int k=0;
+[v _k `Vi ~T0 @X0 1 e ]
+[i _k
+-> 0 `i
+]
+"24
+[; ;FUNCIONES.c: 24: long filtrarFIR1(int in){
+[v _filtrarFIR1 `(l ~T0 @X0 1 ef1`i ]
+{
+[e :U _filtrarFIR1 ]
+[v _in `i ~T0 @X0 1 r1 ]
+[f ]
+"26
+[; ;FUNCIONES.c: 26:     int i = 1;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 1 `i ]
+"27
+[; ;FUNCIONES.c: 27:     x[k] = (int)in;
+[e = *U + &U _x * -> -> _k `Vui `ux -> -> # *U &U _x `ui `ux _in ]
+"28
+[; ;FUNCIONES.c: 28:     long y = 0;
+[v _y `l ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `l ]
+"31
+[; ;FUNCIONES.c: 31:     for (i = 1; i <= 16; i++) {
+{
+[e = _i -> 1 `i ]
+[e $ <= _i -> 16 `i 2  ]
+[e $U 3  ]
+[e :U 2 ]
+{
+"32
+[; ;FUNCIONES.c: 32:         y += (long)B[i - 1] * (long)x[(i + k) % 16];
+[e =+ _y * -> *U + &U _B * -> -> - _i -> 1 `i `ui `ux -> -> # *U &U _B `ui `ux `l -> *U + &U _x * -> -> % + _i _k -> 16 `i `ui `ux -> -> # *U &U _x `ui `ux `l ]
+"33
+[; ;FUNCIONES.c: 33:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 16 `i 2  ]
+[e :U 3 ]
+}
+"35
+[; ;FUNCIONES.c: 35:     k = (k + 1) % 16;
+[e = _k % + _k -> 1 `i -> 16 `i ]
+"36
+[; ;FUNCIONES.c: 36:     return y>>8 ;
+[e ) >> _y -> 8 `i ]
+[e $UE 1  ]
+"37
+[; ;FUNCIONES.c: 37: }
+[e :UE 1 ]
+}
